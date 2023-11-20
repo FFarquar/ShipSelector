@@ -1,17 +1,44 @@
 ﻿@inherits LayoutComponentBase
 
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
+@if (routeData.PageType != typeof(ShipSelector.Pages.PrintPage))
+{
+        <div class="page">
+            <div class="sidebar">
+                <NavMenu />
+            </div>
+
+            <main>
+
+                @if (routeData.PageType != typeof(ShipSelector.Pages.PrintPage))
+                {
+                    <div class="top-row px-4">
+                        <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
+                    </div>
+                }
+                <article class="content px-4">
+                    @Body
+                </article>
+            </main>
     </div>
+}
+else
+{
+                <article class="content px-4">
+                    @Body
+                </article>
+    
+}
 
-    <main>
-        <div class="top-row px-4">
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
-        </div>
+@code {
 
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
-</div>
+    [CascadingParameter] 
+    private RouteData routeData { get; set; } = default!;
+
+
+    protected override void OnInitialized()
+    {
+        if (routeData is null)
+            throw new NullReferenceException("No Cascaded RouteData - You must cascade RouteData in App");
+    }
+
+}

@@ -1,29 +1,25 @@
 ﻿@page "/"
-@using System.Text.Json;
+@*@using System.Text.Json;
 @using System.IO;
 @using ShipSelector.Models;
 @using static System.Net.WebRequestMethods
-@inject HttpClient Http
+@inject HttpClient Http*@
 
 
-<PageTitle>Index</PageTitle>
+<PageTitle>Landing page</PageTitle>
 
-<h1>Hello, world!</h1>
-
-Welcome to your new app.
-
-<SurveyPrompt Title="How is Blazor working for you?" />
+<h1>Select a system to get started!</h1>
 
 @code{
 
-        private Country[]? countries;
-        private UnitType[]? unitTypes;
-    protected override async Task OnInitializedAsync()
-    {
+    //    private Country[]? countries;
+    //    private UnitType[]? unitTypes;
+    //protected override async Task OnInitializedAsync()
+    //{
 
-        //var aaa = await Http.GetStringAsync("Data/countries.json");
-        countries = await Http.GetFromJsonAsync<Country[]>("Data/countries.json");
-        unitTypes = await Http.GetFromJsonAsync<UnitType[]>("Data/unitTypes.json");
-        Console.WriteLine(unitTypes.Length);
-    }
+    //    //var aaa = await Http.GetStringAsync("Data/countries.json");
+    //    countries = await Http.GetFromJsonAsync<Country[]>("Data/countries.json");
+    //    unitTypes = await Http.GetFromJsonAsync<UnitType[]>("Data/unitTypes.json");
+    //    Console.WriteLine(unitTypes.Length);
+    //}
 }
