@@ -1,0 +1,110 @@
+[
+  {
+    "Id": 1,
+    "UnitTypeId": 1,
+    "SubUnitName": "CV",
+    "PrintColour": -16711681
+  },
+  {
+    "Id": 2,
+    "UnitTypeId": 1,
+    "SubUnitName": "CVE",
+    "PrintColour": -16776961
+  },
+  {
+    "Id": 3,
+    "UnitTypeId": 1,
+    "SubUnitName": "CVL",
+    "PrintColour": -5383962
+  },
+  {
+    "Id": 4,
+    "UnitTypeId": 1,
+    "SubUnitName": "BB",
+    "PrintColour": -65536
+  },
+  {
+    "Id": 5,
+    "UnitTypeId": 1,
+    "SubUnitName": "BC",
+    "PrintColour": -2396013
+  },
+  {
+    "Id": 6,
+    "UnitTypeId": 1,
+    "SubUnitName": "CA",
+    "PrintColour": -16744448
+  },
+  {
+    "Id": 7,
+    "UnitTypeId": 1,
+    "SubUnitName": "CL",
+    "PrintColour": -7278960
+  },
+  {
+    "Id": 8,
+    "UnitTypeId": 1,
+    "SubUnitName": "DD",
+    "PrintColour": -256
+  },
+  {
+    "Id": 9,
+    "UnitTypeId": 1,
+    "SubUnitName": "DE",
+    "PrintColour": -6632142
+  },
+  {
+    "Id": 10,
+    "UnitTypeId": 1,
+    "SubUnitName": "Corv",
+    "PrintColour": -8388480
+  },
+  {
+    "Id": 11,
+    "UnitTypeId": 1,
+    "SubUnitName": "MTB",
+    "PrintColour": -7114533
+  },
+  {
+    "Id": 12,
+    "UnitTypeId": 2,
+    "SubUnitName": "Fighter",
+    "PrintColour": -16777216
+  },
+  {
+    "Id": 13,
+    "UnitTypeId": 2,
+    "SubUnitName": "Dive Bomber",
+    "PrintColour": -16751616
+  },
+  {
+    "Id": 14,
+    "UnitTypeId": 2,
+    "SubUnitName": "Torpedo Bomber",
+    "PrintColour": -2894893
+  },
+  {
+    "Id": 15,
+    "UnitTypeId": 2,
+    "SubUnitName": "Level Bomber",
+    "PrintColour": -9404272
+  },
+  {
+    "Id": 16,
+    "UnitTypeId": 2,
+    "SubUnitName": "Recon",
+    "PrintColour": -13676721
+  },
+  {
+    "Id": 17,
+    "UnitTypeId": 3,
+    "SubUnitName": "SS",
+    "PrintColour": -16181
+  },
+  {
+    "Id": 18,
+    "UnitTypeId": 1,
+    "SubUnitName": "Merchant",
+    "PrintColour": -5952982
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "Id": 1,
+    "CountryName": "Australia",
+    "AllianceId": 1
+  },
+  {
+    "Id": 2,
+    "CountryName": "Canada",
+    "AllianceId": 1
+  },
+  {
+    "Id": 3,
+    "CountryName": "Finland",
+    "AllianceId": 3
+  },
+  {
+    "Id": 4,
+    "CountryName": "France",
+    "AllianceId": 1
+  },
+  {
+    "Id": 5,
+    "CountryName": "Germany",
+    "AllianceId": 2
+  },
+  {
+    "Id": 6,
+    "CountryName": "Greece",
+    "AllianceId": 2
+  },
+  {
+    "Id": 7,
+    "CountryName": "Italy",
+    "AllianceId": 2
+  },
+  {
+    "Id": 8,
+    "CountryName": "Japan",
+    "AllianceId": 2
+  },
+  {
+    "Id": 9,
+    "CountryName": "Netherlands",
+    "AllianceId": 1
+  },
+  {
+    "Id": 10,
+    "CountryName": "New Zealand",
+    "AllianceId": 1
+  },
+  {
+    "Id": 11,
+    "CountryName": "Poland",
+    "AllianceId": 1
+  },
+  {
+    "Id": 12,
+    "CountryName": "Soviet Union",
+    "AllianceId": 1
+  },
+  {
+    "Id": 13,
+    "CountryName": "Sweden",
+    "AllianceId": 3
+  },
+  {
+    "Id": 14,
+    "CountryName": "United Kingdom",
+    "AllianceId": 1
+  },
+  {
+    "Id": 15,
+    "CountryName": "United States",
+    "AllianceId": 1
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "Id": 1,
+    "SubUnitTypeId": 14,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 6,
+    "Name_ClassName": "Swordfish",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 3,
+    "SubUnitTypeId": 5,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 1,
+    "Name_ClassName": "Admiral",
+    "ShipsSubsInClass": "HMS Hood"
+  },
+  {
+    "Id": 4,
+    "SubUnitTypeId": 5,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "Repulse",
+    "ShipsSubsInClass": "HMS Repulse, HMS Renown"
+  },
+  {
+    "Id": 5,
+    "SubUnitTypeId": 4,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 5,
+    "Name_ClassName": "King George V",
+    "ShipsSubsInClass": "HMS King George V, HMS Prince Of Wales, HMS Anson, HMS Howe, HMS Duke of York"
+  },
+  {
+    "Id": 6,
+    "SubUnitTypeId": 4,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 5,
+    "Name_ClassName": "Queen Elizabeth",
+    "ShipsSubsInClass": "HMS Warspite"
+  },
+  {
+    "Id": 7,
+    "SubUnitTypeId": 6,
+    "CountryId": 1,
+    "NumberinClass_shipSub": 3,
+    "Name_ClassName": "County",
+    "ShipsSubsInClass": "HMAS Australia, HMAS Canberra, HMAS Shropshire"
+  },
+  {
+    "Id": 8,
+    "SubUnitTypeId": 1,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 1,
+    "Name_ClassName": "Eagle",
+    "ShipsSubsInClass": "HMS Eagle"
+  },
+  {
+    "Id": 9,
+    "SubUnitTypeId": 7,
+    "CountryId": 1,
+    "NumberinClass_shipSub": 3,
+    "Name_ClassName": "Leander",
+    "ShipsSubsInClass": "HMASydney, HMAS Perth, HMAS Hobart"
+  },
+  {
+    "Id": 10,
+    "SubUnitTypeId": 7,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 10,
+    "Name_ClassName": "Leander",
+    "ShipsSubsInClass": "HMS Leander, HMS Ajax, HMS Achilles, HMS Orion, HMS Neptune"
+  },
+  {
+    "Id": 11,
+    "SubUnitTypeId": 8,
+    "CountryId": 1,
+    "NumberinClass_shipSub": 3,
+    "Name_ClassName": "Tribal",
+    "ShipsSubsInClass": "HMAS Bataan, HMAS Warramunga, HMAS Arunta"
+  },
+  {
+    "Id": 12,
+    "SubUnitTypeId": 8,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 16,
+    "Name_ClassName": "Tribal",
+    "ShipsSubsInClass": "HMS Ashanti, HMS Cossack, HMS Maori, HMS Bedouin, HMS Mashona, HMS Eskimo, HMS Nubian, HMS Afridi, HMS Gurka"
+  },
+  {
+    "Id": 13,
+    "SubUnitTypeId": 4,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "Nelson",
+    "ShipsSubsInClass": "HMS Nelson, HMS Rodney"
+  },
+  {
+    "Id": 17,
+    "SubUnitTypeId": 1,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 1,
+    "Name_ClassName": "Hermes",
+    "ShipsSubsInClass": "HMS Hermes"
+  },
+  {
+    "Id": 18,
+    "SubUnitTypeId": 4,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 5,
+    "Name_ClassName": "Revenge",
+    "ShipsSubsInClass": "HMS Ramilies, HMS Royal Oak, HMS Resolution, HMS Royal Sovereign"
+  },
+  {
+    "Id": 27,
+    "SubUnitTypeId": 1,
+    "CountryId": 2,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "a test again",
+    "ShipsSubsInClass": null
+  }
+]

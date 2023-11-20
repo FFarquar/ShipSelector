@@ -1,0 +1,14 @@
+[
+  {
+    "Id": 1,
+    "Name": "Allies"
+  },
+  {
+    "Id": 2,
+    "Name": "Axis"
+  },
+  {
+    "Id": 3,
+    "Name": "Neutral"
+  }
+]

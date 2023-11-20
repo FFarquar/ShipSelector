@@ -1,0 +1,12 @@
+[
+  {
+    "Id": 1,
+    "RulesetName": "Nimitz",
+    "AllowUnlimitedNumberOfAirCraftSelections": true
+  },
+  {
+    "Id": 2,
+    "RulesetName": "Axis and Allies War At sea",
+    "AllowUnlimitedNumberOfAirCraftSelections": false
+  }
+]
