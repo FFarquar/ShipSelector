@@ -1,0 +1,176 @@
+﻿@page "/printpage/{rulesetid:int}/{ChooseFromOwnedColleciton:bool}"
+
+@using ShipSelector.Services.UnitsandListsServiceClient
+@using System.Drawing
+@inject IStorageService StorServ
+@inject IUnitsandListsServiceClient ULSC
+
+
+
+@{var totalImagesInserted = 0;}
+@{var totalNamesInserted= 0;}
+
+    @for (var p = 0; p < numberOfPagesRequired; p++)
+    {
+    <div class="sheet-outer A4">
+
+        <section class="sheet padding-5mm">
+            <article>
+                <table>
+                @for (int r = 0; r < @numberRowsPerPage; r++)
+                    {
+                        @*Need to insert the unit name*@
+                        <tr>
+
+                            @if(totalNamesInserted < UnitsToPrint.Count)
+                            {
+                                @for (int i = 0; i < @numberImagesPerRow; i++)
+                                {
+                                    @if (totalNamesInserted < UnitsToPrint.Count)
+                                    {
+                                        
+                                        @if(@UnitsToPrint[@totalNamesInserted].NumberSelected > 0)
+                                        {
+                                            SetCssClass(@UnitsToPrint[@totalNamesInserted].subUnitTypeObj.Id);
+
+                                            @if(ChooseFromOwnedColleciton)
+                                            {
+                                                <td style=@namebackStyle >
+                                                    @UnitsToPrint[@totalNamesInserted].ShipsSubsInClass
+                                                </td>
+                                                
+                                            }
+                                            else
+                                            {
+                                                <td style=@namebackStyle >
+                                                    Name:
+                                                </td>
+
+                                            }
+
+                                        }
+@*                                        else
+                                        {
+                                        }
+*@                                        totalNamesInserted = totalNamesInserted + 1;
+                                        Console.WriteLine("totalNamesInserted " + @totalNamesInserted);
+                                    }
+                                }
+                            }
+                        </tr>
+                        @*Insert the image*@
+                        <tr>
+
+                                @for (int i = 0; i < @numberImagesPerRow; i++)
+                                    {
+                                        @if (totalImagesInserted < UnitsToPrint.Count)
+                                        {
+                                            var srcLocationLocal = "ShipImages/" + @RuleSetId + "/" + @UnitsToPrint[@totalImagesInserted].Countryobj.Id + "/" + @UnitsToPrint[@totalImagesInserted].ImagePath;
+                                            <td>
+                                                <img src=@srcLocationLocal style="max-width:300px;max-height:300px"/>
+                                            </td>
+                                            totalImagesInserted= totalImagesInserted + 1;
+                                        }
+                                    Console.WriteLine("totalImagesInserted " + @totalImagesInserted);
+                                    }
+                        </tr>
+
+                     }
+                    </table>
+                </article>
+        </section>
+    </div>
+
+    }
+
+@code {
+    [Parameter]
+    public int RuleSetId { get; set; } = 0;
+    [Parameter]
+    public bool ChooseFromOwnedColleciton { get; set; } = false;
+
+    public int numberRowsPerPage = 0;
+    public int numberImagesPerRow = 0;
+    public int numberOfPagesRequired = 0;
+
+    private List<UnitForGameSystemDTO> SelectedUnits = new List<UnitForGameSystemDTO>();  //A list of all items that have been selected
+
+    private List<UnitForGameSystemDTO> UnitsToPrint = new List<UnitForGameSystemDTO>();  //This is a one for one list of the items to print
+
+    private List<SubUnitTypeDTO> SubUnits = new List<SubUnitTypeDTO>();
+
+    string namebackStyle = string.Empty;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        base.OnInitialized();
+
+        var SelectedUnitsResponse = await StorServ.RetrieveAllUnits();
+        SelectedUnits = SelectedUnitsResponse.Data;
+
+        var subUnitResonse = await ULSC.GetListOfSubUnits();
+        SubUnits = subUnitResonse.Data;
+
+        //need to determine how many images are to be inserted
+        if(RuleSetId == 1)
+        {
+            numberRowsPerPage = 2;
+            numberImagesPerRow = 3;
+
+            //How many total, non sub or aircraft images required
+            //foreach (var unit in SelectedUnits)
+            for (var i = 0; i < SelectedUnits.Count; i++)
+            {
+                if(SelectedUnits[i].NumberSelected > 0 && SelectedUnits[i].subUnitTypeObj.UnitTypeId ==1)
+                {
+                    //If several of the same unit have been selected, they need to be added to the collection each time
+                    for (var a = 0; a < SelectedUnits[i].NumberSelected; a++)
+                    {
+                        UnitsToPrint.Add(SelectedUnits[i]);
+                    }
+                }
+
+            }
+        }
+        if(RuleSetId == 2)
+        {
+            numberRowsPerPage = 2;
+            numberImagesPerRow = 4;
+
+            foreach (var unit in SelectedUnits)
+            {
+                if(unit.NumberSelected > 0 )
+                {
+                    //If several of the same unit have been selected, they need to be added to the collection each time
+                    for (var i = 0; i < unit.NumberSelected; i++)
+                    {
+                        UnitsToPrint.Add(unit);
+                    }
+                }
+            }
+        }
+
+
+        numberOfPagesRequired = (UnitsToPrint.Count()+ (numberRowsPerPage * numberImagesPerRow-1)) / (numberRowsPerPage * numberImagesPerRow);
+        StateHasChanged();
+    }
+
+
+
+    private async void SetCssClass(int subunitType)
+    {
+        var response = SubUnits
+        .Where(su => su.Id == subunitType)
+        .Select(p => p.RGBDetails)
+        .FirstOrDefault();
+
+
+        namebackStyle = @"background-color:" + response.ToString() +"!important";
+
+           namebackStyle = @"background-color:rgba(" + response.R + ", " + response.G + ", " + response.B + ", .5) !important";
+
+    }
+
+
+}

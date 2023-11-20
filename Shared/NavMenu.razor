@@ -1,39 +1,71 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">ShipSelector</a>
-        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
-</div>
+﻿@using ShipSelector.Services.UnitsandListsServiceClient
+@using ShipSelector.Models
 
-<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
-    <nav class="flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="oi oi-home" aria-hidden="true"></span> Home
-            </NavLink>
+
+@inject IUnitsandListsServiceClient ULSC 
+
+
+@if (routeData.PageType != typeof(ShipSelector.Pages.PrintPage))
+{
+    <div class="top-row ps-3 navbar navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="">Naval Games</a>
+            <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="oi oi-plus" aria-hidden="true"></span> Counter
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="fetchdata">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
-            </NavLink>
-        </div>
-    </nav>
-</div>
+    </div>
+}
+
+
+@if (routeData.PageType == typeof(ShipSelector.Pages.Index))
+{
+    <div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
+        <nav class="flex-column">
+
+            @foreach (var item in RuleSets)
+            {
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="@($"unitselectionrules2/{@item.Id}")"  >
+
+                        <span aria-hidden="true"></span> @item.RulesetName
+                    </NavLink>
+                </div>
+            }
+
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="unitsDB">
+                    <span class="oi oi-plus" aria-hidden="true"></span> Unit DB
+                </NavLink>
+            </div>
+
+        </nav>
+    </div>
+}
 
 @code {
     private bool collapseNavMenu = true;
 
     private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+    private static List<RuleSet> RuleSets = new List<RuleSet>();
+
+    [CascadingParameter] 
+    private RouteData routeData { get; set; } = default!;
 
     private void ToggleNavMenu()
     {
         collapseNavMenu = !collapseNavMenu;
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await ULSC.GetRuleSets();
+        RuleSets = response.Data;
+    }
+
+    protected override void OnInitialized()
+    {
+        if (routeData is null)
+            throw new NullReferenceException("No Cascaded RouteData - You must cascade RouteData in App");
     }
 }

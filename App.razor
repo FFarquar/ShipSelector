@@ -1,7 +1,23 @@
-﻿<Router AppAssembly="@typeof(App).Assembly">
+﻿@*<Router AppAssembly="@typeof(App).Assembly">
     <Found Context="routeData">
         <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
         <FocusOnNavigate RouteData="@routeData" Selector="h1" />
+    </Found>
+    <NotFound>
+        <PageTitle>Not found</PageTitle>
+        <LayoutView Layout="@typeof(MainLayout)">
+            <p role="alert">Sorry, there's nothing at this address.</p>
+        </LayoutView>
+    </NotFound>
+</Router>
+*@
+@*using the CascadingValue to turn off navmenu later. Example at https://stackoverflow.com/questions/73610751/hide-show-menu-in-navbar-blazor*@
+<Router AppAssembly="@typeof(App).Assembly">
+    <Found Context="routeData">
+        <CascadingValue TValue="RouteData" value="@routeData">
+            <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
+            <FocusOnNavigate RouteData="@routeData" Selector="h1" />
+        </CascadingValue>
     </Found>
     <NotFound>
         <PageTitle>Not found</PageTitle>
