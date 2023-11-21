@@ -1,4 +1,5 @@
 ﻿@inherits LayoutComponentBase
+@inject IJSRuntime JS
 
 @if (routeData.PageType != typeof(ShipSelector.Pages.PrintPage))
 {
@@ -12,7 +13,7 @@
                 @if (routeData.PageType != typeof(ShipSelector.Pages.PrintPage))
                 {
                     <div class="top-row px-4">
-                        <a href="about" target="_blank">About</a>
+                        <a @onclick="() => Openabout()"  target="_blank">About</a>
                         <HomeButton />
                     </div>
 
@@ -35,7 +36,7 @@ else
 
     [CascadingParameter] 
     private RouteData routeData { get; set; } = default!;
-
+    private IJSObjectReference? _jsModule;
 
     protected override void OnInitialized()
     {
@@ -43,4 +44,19 @@ else
             throw new NullReferenceException("No Cascaded RouteData - You must cascade RouteData in App");
     }
 
+        protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            _jsModule ??= await JS.InvokeAsync<IJSObjectReference>("import", "./css/fileScripts.js");
+        }
+    }
+    private async void Openabout()
+    {
+
+
+        await JS.InvokeAsync<object>("open", "about");
+
+
+    }
 }
