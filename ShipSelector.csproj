@@ -26,32 +26,4 @@
     <Folder Include="wwwroot\ShipImages\2\1\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Include="wwwroot\ShipImages\1\14\Airstrip.jpg" />
-    <None Include="wwwroot\ShipImages\1\14\A_H_S_Z class DD.jpg" />
-    <None Include="wwwroot\ShipImages\1\14\County.jpg" />
-    <None Include="wwwroot\ShipImages\1\14\Eagle.jpg" />
-    <None Include="wwwroot\ShipImages\1\14\Hermes.jpg" />
-    <None Include="wwwroot\ShipImages\1\14\Hood.jpg" />
-    <None Include="wwwroot\ShipImages\1\14\I class DD.jpg" />
-    <None Include="wwwroot\ShipImages\1\14\j_k_n class DD.jpg" />
-    <None Include="wwwroot\ShipImages\1\14\KGV.jpg" />
-    <None Include="wwwroot\ShipImages\1\14\Leander.jpg" />
-    <None Include="wwwroot\ShipImages\1\14\L_M class DD.jpg" />
-    <None Include="wwwroot\ShipImages\1\14\Nelson.jpg" />
-    <None Include="wwwroot\ShipImages\1\14\o_p class DD.jpg" />
-    <None Include="wwwroot\ShipImages\1\14\QueenEliz.jpg" />
-    <None Include="wwwroot\ShipImages\1\14\Repulse.jpg" />
-    <None Include="wwwroot\ShipImages\1\14\Revenge.jpg" />
-    <None Include="wwwroot\ShipImages\1\14\SwordFish.jpg" />
-    <None Include="wwwroot\ShipImages\1\14\Tribal.jpg" />
-    <None Include="wwwroot\ShipImages\1\1\County.jpg" />
-    <None Include="wwwroot\ShipImages\1\1\Italians.jpg" />
-    <None Include="wwwroot\ShipImages\1\1\Leander.jpg" />
-    <None Include="wwwroot\ShipImages\1\1\Tribal.jpg" />
-    <None Include="wwwroot\ShipImages\1\2\20231101_145537.jpg" />
-    <None Include="wwwroot\ShipImages\2\14\Revenge.jpg" />
-    <None Include="wwwroot\ShipImages\2\2\Uk Ships 2.jpg" />
-  </ItemGroup>
-
 </Project>

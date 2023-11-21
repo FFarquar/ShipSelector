@@ -118,5 +118,213 @@
     "NumberinClass_shipSub": 2,
     "Name_ClassName": "a test again",
     "ShipsSubsInClass": null
+  },
+  {
+    "Id": 28,
+    "SubUnitTypeId": 6,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 11,
+    "Name_ClassName": "County",
+    "ShipsSubsInClass": "HMS Berwick, HMS Cumberland, HMS Kent"
+  },
+  {
+    "Id": 29,
+    "SubUnitTypeId": 7,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 4,
+    "Name_ClassName": "Arethusa",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 30,
+    "SubUnitTypeId": 7,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 10,
+    "Name_ClassName": "Town",
+    "ShipsSubsInClass": "HMS Liverpool, HMS Manchester, HMS Newcastle, HMS Glasgow, HMS Sheffield, HMS Birmingham, HMS Belfast, HMS Edinburgh, HMS Southampton"
+  },
+  {
+    "Id": 31,
+    "SubUnitTypeId": 6,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "York",
+    "ShipsSubsInClass": "HMS York, HMS Exeter"
+  },
+  {
+    "Id": 32,
+    "SubUnitTypeId": 7,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 16,
+    "Name_ClassName": "Dido",
+    "ShipsSubsInClass": "HMS Dido, HMS Euryalus, HMS Argonaut, HMS Phoebe"
+  },
+  {
+    "Id": 33,
+    "SubUnitTypeId": 7,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 11,
+    "Name_ClassName": "Crown Colony",
+    "ShipsSubsInClass": "HMS Fiji, HMS Kenya, HMS Jamaica, HMS Ceylon, HMS Bermuda, HMS Nigeria"
+  },
+  {
+    "Id": 34,
+    "SubUnitTypeId": 7,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 8,
+    "Name_ClassName": "Danae",
+    "ShipsSubsInClass": "HMS Danae, HMS Despatch, HMS Delhi, HMS Dauntless"
+  },
+  {
+    "Id": 35,
+    "SubUnitTypeId": 7,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "Emerald",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 36,
+    "SubUnitTypeId": 7,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 5,
+    "Name_ClassName": "Bellona",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 37,
+    "SubUnitTypeId": 7,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 5,
+    "Name_ClassName": "Hawkins",
+    "ShipsSubsInClass": "HMS Hawkins, HMS Frobisher"
+  },
+  {
+    "Id": 38,
+    "SubUnitTypeId": 8,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 5,
+    "Name_ClassName": "C Class",
+    "ShipsSubsInClass": "HMS Crusader, HMS Comet, HMS Crescent, HMS Cygnet"
+  },
+  {
+    "Id": 39,
+    "SubUnitTypeId": 8,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 9,
+    "Name_ClassName": "G Class",
+    "ShipsSubsInClass": "HMS Griffin, HMS Glowworm, HMS Grafton, HMS Galant, HMS Garland, HMS Grenade"
+  },
+  {
+    "Id": 40,
+    "SubUnitTypeId": 8,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 9,
+    "Name_ClassName": "H Class",
+    "ShipsSubsInClass": "HMS Hostile, HMS Havock, HMS Hero, HMS Hotspur, HMS Hasty"
+  },
+  {
+    "Id": 41,
+    "SubUnitTypeId": 8,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 8,
+    "Name_ClassName": "J Class",
+    "ShipsSubsInClass": "HMS Jervis, HMS Jupiter, HMS Jaguar, HMS Juno, HMS Javelin, HMS Janus, HMS Jersey, HMS Jackal"
+  },
+  {
+    "Id": 42,
+    "SubUnitTypeId": 8,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 8,
+    "Name_ClassName": "K Class",
+    "ShipsSubsInClass": "HMS Kashmir, HMS Kelly"
+  },
+  {
+    "Id": 43,
+    "SubUnitTypeId": 8,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 8,
+    "Name_ClassName": "S Class",
+    "ShipsSubsInClass": "HMS Saumerez, HMS Scorpion, HMS Serapis, HMS Scourge, HMS Shark, HMS Savage"
+  },
+  {
+    "Id": 44,
+    "SubUnitTypeId": 8,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 8,
+    "Name_ClassName": "V Class",
+    "ShipsSubsInClass": "HMS Venus, HMS Virago, HMS Volage, HMS Verulam, HMS Vixen"
+  },
+  {
+    "Id": 45,
+    "SubUnitTypeId": 8,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 16,
+    "Name_ClassName": "O and P Class",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 46,
+    "SubUnitTypeId": 8,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 9,
+    "Name_ClassName": "I class",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 47,
+    "SubUnitTypeId": 8,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 16,
+    "Name_ClassName": "L and M Class",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 48,
+    "SubUnitTypeId": 1,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 3,
+    "Name_ClassName": "Courageous",
+    "ShipsSubsInClass": "HMS Courageous, HMS Glorious"
+  },
+  {
+    "Id": 49,
+    "SubUnitTypeId": 1,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 1,
+    "Name_ClassName": "Ark Royal",
+    "ShipsSubsInClass": "HMS Ark Royal"
+  },
+  {
+    "Id": 50,
+    "SubUnitTypeId": 1,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 3,
+    "Name_ClassName": "Illustrious",
+    "ShipsSubsInClass": "HMS Illustrious, HMS Formidable, HMS Victorious"
+  },
+  {
+    "Id": 51,
+    "SubUnitTypeId": 1,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 1,
+    "Name_ClassName": "Indomitable",
+    "ShipsSubsInClass": "HMS Indomitable"
+  },
+  {
+    "Id": 52,
+    "SubUnitTypeId": 1,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "Implacable",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 53,
+    "SubUnitTypeId": 2,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 38,
+    "Name_ClassName": "Attacker, Avenger, Ruler",
+    "ShipsSubsInClass": "HMS Chaser, HMS Attacker, HMS Battle, HMS Fencer"
   }
 ]
