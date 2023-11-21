@@ -86,6 +86,12 @@ img[b-8b59dktdwl] {
     img:hover[b-8b59dktdwl] {
         transform: scale(5);
     }
+/* /Shared/HomeButton.razor.rz.scp.css */
+.home-button[b-y17r5qmw6d] {
+    white-space: nowrap;
+    margin-right: 10px;
+    transform: rotate(-5deg);
+}
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-u85pf47pul] {
     position: relative;
