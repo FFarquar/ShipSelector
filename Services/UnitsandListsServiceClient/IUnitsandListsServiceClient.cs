@@ -8,6 +8,7 @@ namespace ShipSelector.Services.UnitsandListsServiceClient
         Task<ServiceResponse<List<RuleSet>>> GetRuleSets();
         Task<ServiceResponse<RuleSet>> GetRuleSet(int rulesetId);
         Task<ServiceResponse<List<Country>>> GetListOfCountries();
+        Task<ServiceResponse<List<Country>>> GetListOfCountriesForSelectedUnitsInGameSystem(int gameSystem);
         Task<ServiceResponse<List<UnitType>>> GetListOfUnitTypes();
 
         Task<ServiceResponse<List<SubUnitTypeDTO>>> GetListOfSubUnits();

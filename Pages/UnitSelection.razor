@@ -331,7 +331,8 @@
 
 
         //request.RuleSetId = Int16.Parse(RuleSetId);
-        var resultCountries = await ULSC.GetListOfCountries();
+        //var resultCountries = await ULSC.GetListOfCountries();
+        var resultCountries = await ULSC.GetListOfCountriesForSelectedUnitsInGameSystem(RuleSetId);
         Countries = resultCountries.Data;
 
         var resultUnitTypes = await ULSC.GetListOfUnitTypes();

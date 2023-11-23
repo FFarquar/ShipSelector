@@ -51,6 +51,41 @@ namespace ShipSelector.Services.UnitsandListsServiceClient
         //    return await result.Content.ReadFromJsonAsync<ServiceResponse<int>>();
         //}
 
+        public async Task<ServiceResponse<List<Country>>> GetListOfCountriesForSelectedUnitsInGameSystem(int ruleSetId)
+        {
+            //this function will get a list of countries that have actually had units assigned
+
+            ServiceResponse<List<Country>> fullCountryList = await GetListOfCountries();
+
+            var GameSystemUnitJs = await _http.GetFromJsonAsync<GameSystemUnitSpecificDetail[]>("Data/gameSystemSpecific.json");
+            var UnitJS = await _http.GetFromJsonAsync<Unit[]>("Data/units.json");
+            List<GameSystemUnitSpecificDetail> gameSpecList = GameSystemUnitJs.ToList();
+            List<Unit> unitList = UnitJS.ToList();
+
+            List<Country> filteredCountryList = new List<Country>();
+            //TODO: This query works well when joining 2 tables and usign a where clause to filter selections
+            foreach (var c in fullCountryList.Data)
+            {
+                var query = unitList
+                                .Join(gameSpecList,
+                                    ut => ut.Id,
+                                    gsu => gsu.UnitId,
+                                    (ut, gsu) => new {Unit = ut,  GameSystemUnitSpecificDetail = gsu})
+                                .Where(x => x.Unit.CountryId == c.Id && x.GameSystemUnitSpecificDetail.RulesetId == ruleSetId);
+
+
+                if (query.Count() > 0)
+                {
+                    filteredCountryList.Add(c);
+                }
+            }
+
+            return new ServiceResponse<List<Country>>
+            {
+                Data = filteredCountryList
+            };
+        }
+
         public async Task<ServiceResponse<List<Country>>> GetListOfCountries()
         {
             var result = await _http.GetFromJsonAsync<Country[]>("Data/countries.json");
@@ -488,6 +523,7 @@ namespace ShipSelector.Services.UnitsandListsServiceClient
 
             return "Unknown alliance";
         }
+
         public async Task SetListOfUnits(int rulesetId, bool onlyReturnUnitsInCollection)
         {
             var resultUnits = await GetListofAllGameUnitsForRuleset(rulesetId, onlyReturnUnitsInCollection);
@@ -518,6 +554,8 @@ namespace ShipSelector.Services.UnitsandListsServiceClient
 
             return await result.Content.ReadFromJsonAsync<ServiceResponse<bool>>();
         }
+
+
     }
 
     class ColorConverter : JsonConverter
