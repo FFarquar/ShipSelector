@@ -61,7 +61,7 @@
     "CountryId": 1,
     "NumberinClass_shipSub": 3,
     "Name_ClassName": "Leander",
-    "ShipsSubsInClass": "HMASydney, HMAS Perth, HMAS Hobart"
+    "ShipsSubsInClass": "HMAS Sydney, HMAS Perth, HMAS Hobart"
   },
   {
     "Id": 10,
@@ -110,14 +110,6 @@
     "NumberinClass_shipSub": 5,
     "Name_ClassName": "Revenge",
     "ShipsSubsInClass": "HMS Ramilies, HMS Royal Oak, HMS Resolution, HMS Royal Sovereign"
-  },
-  {
-    "Id": 27,
-    "SubUnitTypeId": 1,
-    "CountryId": 2,
-    "NumberinClass_shipSub": 2,
-    "Name_ClassName": "a test again",
-    "ShipsSubsInClass": null
   },
   {
     "Id": 28,
@@ -326,5 +318,141 @@
     "NumberinClass_shipSub": 38,
     "Name_ClassName": "Attacker, Avenger, Ruler",
     "ShipsSubsInClass": "HMS Chaser, HMS Attacker, HMS Battle, HMS Fencer"
+  },
+  {
+    "Id": 54,
+    "SubUnitTypeId": 4,
+    "CountryId": 7,
+    "NumberinClass_shipSub": 3,
+    "Name_ClassName": "Littorio",
+    "ShipsSubsInClass": "Littorio, Roma, Vittoria Veneto"
+  },
+  {
+    "Id": 55,
+    "SubUnitTypeId": 4,
+    "CountryId": 7,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "Cavour",
+    "ShipsSubsInClass": "Conte di Cavour, Giulio Cesare"
+  },
+  {
+    "Id": 56,
+    "SubUnitTypeId": 4,
+    "CountryId": 7,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "Andrea Doria",
+    "ShipsSubsInClass": "Andrea Doria, Duilio"
+  },
+  {
+    "Id": 57,
+    "SubUnitTypeId": 6,
+    "CountryId": 7,
+    "NumberinClass_shipSub": 4,
+    "Name_ClassName": "Zara",
+    "ShipsSubsInClass": "Zara, Gorizia, Pola"
+  },
+  {
+    "Id": 58,
+    "SubUnitTypeId": 7,
+    "CountryId": 7,
+    "NumberinClass_shipSub": 4,
+    "Name_ClassName": "Giussano",
+    "ShipsSubsInClass": "Bartolomeo Colleoni, Alberto da Barbiano, Giovanni delle Bande Nere"
+  },
+  {
+    "Id": 59,
+    "SubUnitTypeId": 7,
+    "CountryId": 7,
+    "NumberinClass_shipSub": 4,
+    "Name_ClassName": "Montecuccoli",
+    "ShipsSubsInClass": "Raimondo Montecuccoli, Muzio Attendolo"
+  },
+  {
+    "Id": 60,
+    "SubUnitTypeId": 6,
+    "CountryId": 7,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "Trento",
+    "ShipsSubsInClass": "Trento"
+  },
+  {
+    "Id": 61,
+    "SubUnitTypeId": 6,
+    "CountryId": 7,
+    "NumberinClass_shipSub": 1,
+    "Name_ClassName": "Bolzano",
+    "ShipsSubsInClass": "Bolzano"
+  },
+  {
+    "Id": 62,
+    "SubUnitTypeId": 7,
+    "CountryId": 7,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "Duca d'Aosta",
+    "ShipsSubsInClass": "Emanuele Filiberto Duca d'Aosta, Eugenio di Savoia"
+  },
+  {
+    "Id": 63,
+    "SubUnitTypeId": 7,
+    "CountryId": 7,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "Abruzzi",
+    "ShipsSubsInClass": "Luigi di Savoia Duca degli Abruzzi, Giuseppe Garibaldi"
+  },
+  {
+    "Id": 64,
+    "SubUnitTypeId": 7,
+    "CountryId": 7,
+    "NumberinClass_shipSub": 4,
+    "Name_ClassName": "Capitano Romani",
+    "ShipsSubsInClass": " Attilio Regolo, Giulio Germanico, Pompeo Magno, Scipione Africano"
+  },
+  {
+    "Id": 65,
+    "SubUnitTypeId": 7,
+    "CountryId": 7,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "Cadorna",
+    "ShipsSubsInClass": "Luigi Cadorna, Armando Diaz"
+  },
+  {
+    "Id": 66,
+    "SubUnitTypeId": 8,
+    "CountryId": 7,
+    "NumberinClass_shipSub": 28,
+    "Name_ClassName": "Folgore",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 67,
+    "SubUnitTypeId": 8,
+    "CountryId": 7,
+    "NumberinClass_shipSub": 12,
+    "Name_ClassName": "Navigatori",
+    "ShipsSubsInClass": "Alvise Da Mosto, Antonio da Noli, Nicoloso da Recco, Nicolò Zeno, Antonio Pigafetta, Luca Tarigo, Leone Pancaldo, Ugolino Vivaldi"
+  },
+  {
+    "Id": 68,
+    "SubUnitTypeId": 8,
+    "CountryId": 7,
+    "NumberinClass_shipSub": 4,
+    "Name_ClassName": "Sella",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 69,
+    "SubUnitTypeId": 8,
+    "CountryId": 7,
+    "NumberinClass_shipSub": 19,
+    "Name_ClassName": "Soldati",
+    "ShipsSubsInClass": "Alpino, Alpino, Ascari, Aviere, Bombardiere, Corsaro, Camicia Nera, Fuciliere, Mitragliere, Velite"
+  },
+  {
+    "Id": 70,
+    "SubUnitTypeId": 1,
+    "CountryId": 7,
+    "NumberinClass_shipSub": 1,
+    "Name_ClassName": "Aquilia",
+    "ShipsSubsInClass": "Aquilia"
   }
 ]
