@@ -23,7 +23,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="wwwroot\ShipImages\1\2\" />
     <Folder Include="wwwroot\ShipImages\2\1\" />
+    <Folder Include="wwwroot\ShipImages\2\2\" />
   </ItemGroup>
 
 </Project>

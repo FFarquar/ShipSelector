@@ -311,6 +311,7 @@ namespace ShipSelector.Services.UnitsandListsServiceClient
                             (gsu, u) => new { GameSystemUnitSpecificDetail = gsu, Unit = u })
                     .Where(t => t.GameSystemUnitSpecificDetail.RulesetId == rulesetId);
 
+
             //https://asusualcoding.wordpress.com/2018/03/10/join-multiple-lists-using-linq-in-c/
             //This doesnt woek, gets stuck in a loop
             //var _GSWithUnit1 = gameSpecList
@@ -396,46 +397,6 @@ namespace ShipSelector.Services.UnitsandListsServiceClient
 
 
 
-
-            //if (GameSystemUnitJs != null && GameSystemUnitJs.Length != 0)
-            //{
-            //    rsultList
-            //    var units = resultJson
-            //    .Include(a => a.Unit)
-            //    .Include(b => b.Unit.Country)
-            //    .Include(c => c.Unit.Country.Alliance)
-            //    .Include(d => d.Unit.SubUnitType)
-            //    .Where(r => r.RulesetId == rulesetId)
-            //    .OrderBy(p => p.Unit.SubUnitType.SubUnitName)
-            //    .ThenBy(p => p.Unit.Name_ClassName)
-            //    .Select(t => new
-            //    {
-            //        id = t.Id,
-            //        nameClassName = t.Unit.Name_ClassName,
-            //        subUnitName = t.Unit.SubUnitType.SubUnitName,
-            //        country = t.Unit.Country.CountryName,
-            //        alliance = t.Unit.Country.Alliance.Name,
-            //        cost = t.Cost,
-            //        imagePath = t.ImagePath,
-            //        numberInCollection = t.Unit.NumberinClass_shipSub,
-            //        ShipsSubsInClass = t.Unit.ShipsSubsInClass,
-            //        SubUnitTypeObj = t.Unit.SubUnitType,
-            //        countryObj = t.Unit.Country,
-            //    })
-            //    .ToListAsync();
-            //}
-            //else
-            //{
-            //    //Nothing found in the json
-            //    result.Data = new List<UnitForGameSystemDTO>();
-            //    result.Message = "JSON Not found or nothing in it";
-            //    result.Success = false;
-
-
-            //}
-
-
-
             ////Before returning the data, we have to implement some changes to it based on the onlyReturnUnitsInCollection and rulesetId flags
 
             ////If using my collection, each ship or sub will be returned as a unique entity, so it can only be selected once
@@ -497,13 +458,12 @@ namespace ShipSelector.Services.UnitsandListsServiceClient
                 }
             }
 
-            //result.Data = unitList;
-            //return result;
-            ////}
-            ///
+            List<UnitForGameSystemDTO> SortedList = listToReturn.OrderBy(o => o.subUnitTypeObj.SubUnitName).ToList();
+
             ServiceResponse<List<UnitForGameSystemDTO>> SrRespone = new ServiceResponse<List<UnitForGameSystemDTO>>()
             {
-                Data = listToReturn
+                //Data = listToReturn
+                Data = SortedList
             };
 
             //TODO: UP TO HERE. Need a bit more processing to create duplicates and set the max amount of ships that can be selected. See below

@@ -175,20 +175,6 @@
     "RulesetId": 2
   },
   {
-    "Id": 45,
-    "UnitId": 27,
-    "Cost": 23,
-    "ImagePath": "20231101_145537.jpg",
-    "RulesetId": 1
-  },
-  {
-    "Id": 46,
-    "UnitId": 27,
-    "Cost": 666,
-    "ImagePath": "Uk Ships 2.jpg",
-    "RulesetId": 2
-  },
-  {
     "Id": 47,
     "UnitId": 28,
     "Cost": 17,
@@ -368,6 +354,125 @@
     "UnitId": 53,
     "Cost": 10,
     "ImagePath": "Attacker.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 73,
+    "UnitId": 54,
+    "Cost": 41,
+    "ImagePath": "Littorio.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 74,
+    "UnitId": 55,
+    "Cost": 26,
+    "ImagePath": "Cavour.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 75,
+    "UnitId": 56,
+    "Cost": 26,
+    "ImagePath": "Cavour.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 76,
+    "UnitId": 57,
+    "Cost": 20,
+    "ImagePath": "Zara.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 77,
+    "UnitId": 58,
+    "Cost": 6,
+    "ImagePath": "Guissano.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 78,
+    "UnitId": 59,
+    "Cost": 9,
+    "ImagePath": "Montecuccioli.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 79,
+    "UnitId": 60,
+    "Cost": 17,
+    "ImagePath": "Trento.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 80,
+    "UnitId": 61,
+    "Cost": 17,
+    "ImagePath": "Trento.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 81,
+    "UnitId": 62,
+    "Cost": 8,
+    "ImagePath": "DucadAosta.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 82,
+    "UnitId": 63,
+    "Cost": 11,
+    "ImagePath": "Abruzzi.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 83,
+    "UnitId": 64,
+    "Cost": 7,
+    "ImagePath": "CapitanoRomani.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 84,
+    "UnitId": 65,
+    "Cost": 6,
+    "ImagePath": "Guissano.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 85,
+    "UnitId": 66,
+    "Cost": 3,
+    "ImagePath": "Folgore.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 86,
+    "UnitId": 67,
+    "Cost": 3,
+    "ImagePath": "Navigatori.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 87,
+    "UnitId": 68,
+    "Cost": 2,
+    "ImagePath": "Sella.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 88,
+    "UnitId": 69,
+    "Cost": 3,
+    "ImagePath": "Soldati.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 89,
+    "UnitId": 70,
+    "Cost": 30,
+    "ImagePath": "Aquilia.jpg",
     "RulesetId": 1
   }
 ]

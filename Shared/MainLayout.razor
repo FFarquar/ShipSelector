@@ -13,7 +13,7 @@
                 @if (routeData.PageType != typeof(ShipSelector.Pages.PrintPage))
                 {
                     <div class="top-row px-4">
-                        <a @onclick="() => Openabout()"  target="_blank">About</a>
+                        <a @onclick="() => Openabout()"  target="_blank">Read me</a>
                         <HomeButton />
                     </div>
 
@@ -51,12 +51,11 @@ else
             _jsModule ??= await JS.InvokeAsync<IJSObjectReference>("import", "./css/fileScripts.js");
         }
     }
+
     private async void Openabout()
     {
 
-
-        await JS.InvokeAsync<object>("open", "about");
-
+        await JS.InvokeAsync<object>("open", "readme");
 
     }
 }
