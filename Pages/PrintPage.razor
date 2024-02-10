@@ -67,7 +67,16 @@
                                         {
                                             var srcLocationLocal = "ShipImages/" + @RuleSetId + "/" + @UnitsToPrint[@totalImagesInserted].Countryobj.Id + "/" + @UnitsToPrint[@totalImagesInserted].ImagePath;
                                             <td>
-                                                <img src=@srcLocationLocal style="max-width:300px;max-height:300px"/>
+                                                @*<img src=@srcLocationLocal style="max-width:300px;max-height:300px"/>*@
+                                                @if(@RuleSetId ==1)
+                                                {
+                                                    <img src=@srcLocationLocal style="max-width:300px;max-height:300px"/>
+                                                }
+                                                @if(@RuleSetId ==2)
+                                                    {
+                                                        @*<img src=@srcLocationLocal width="230" height="345"/>           *@
+                                                        <img src=@srcLocationLocal width="254" height="350"/>           
+                                                    }
                                             </td>
                                             totalImagesInserted= totalImagesInserted + 1;
                                         }
