@@ -57,7 +57,10 @@ namespace ShipSelector.Services.UnitsandListsServiceClient
 
             ServiceResponse<List<Country>> fullCountryList = await GetListOfCountries();
 
-            var GameSystemUnitJs = await _http.GetFromJsonAsync<GameSystemUnitSpecificDetail[]>("Data/gameSystemSpecific.json");
+            var randomid = Guid.NewGuid().ToString();
+            var gameSystemSpecificURL = $"Data/gameSystemSpecific.json?{randomid}";
+            var GameSystemUnitJs = await _http.GetFromJsonAsync<GameSystemUnitSpecificDetail[]>(gameSystemSpecificURL);
+            //var GameSystemUnitJs = await _http.GetFromJsonAsync<GameSystemUnitSpecificDetail[]>("Data/gameSystemSpecific.json");
             var UnitJS = await _http.GetFromJsonAsync<Unit[]>("Data/units.json");
             List<GameSystemUnitSpecificDetail> gameSpecList = GameSystemUnitJs.ToList();
             List<Unit> unitList = UnitJS.ToList();

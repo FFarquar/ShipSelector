@@ -1,19 +1,5 @@
 [
   {
-    "Id": 1,
-    "UnitId": 1,
-    "Cost": 17,
-    "ImagePath": "add card for Swordfish",
-    "RulesetId": 2
-  },
-  {
-    "Id": 3,
-    "UnitId": 3,
-    "Cost": 45,
-    "ImagePath": "add card for hood",
-    "RulesetId": 2
-  },
-  {
     "Id": 4,
     "UnitId": 1,
     "Cost": 1,
@@ -49,39 +35,11 @@
     "RulesetId": 1
   },
   {
-    "Id": 10,
-    "UnitId": 4,
-    "Cost": 51,
-    "ImagePath": "Add card for Repulse",
-    "RulesetId": 2
-  },
-  {
-    "Id": 11,
-    "UnitId": 5,
-    "Cost": 52,
-    "ImagePath": "Add card for KGV",
-    "RulesetId": 2
-  },
-  {
-    "Id": 12,
-    "UnitId": 6,
-    "Cost": 45,
-    "ImagePath": "Add card for Queen Eliz",
-    "RulesetId": 2
-  },
-  {
     "Id": 14,
     "UnitId": 7,
     "Cost": 17,
     "ImagePath": "County.jpg",
     "RulesetId": 1
-  },
-  {
-    "Id": 18,
-    "UnitId": 7,
-    "Cost": 123,
-    "ImagePath": null,
-    "RulesetId": 2
   },
   {
     "Id": 19,
@@ -91,25 +49,11 @@
     "RulesetId": 1
   },
   {
-    "Id": 20,
-    "UnitId": 9,
-    "Cost": 22,
-    "ImagePath": "leanderAxisandAllies.jpg",
-    "RulesetId": 2
-  },
-  {
     "Id": 21,
     "UnitId": 8,
     "Cost": 20,
     "ImagePath": "Eagle.jpg",
     "RulesetId": 1
-  },
-  {
-    "Id": 22,
-    "UnitId": 8,
-    "Cost": 2000,
-    "ImagePath": "ChangeThis.jpg",
-    "RulesetId": 2
   },
   {
     "Id": 23,
@@ -119,25 +63,11 @@
     "RulesetId": 1
   },
   {
-    "Id": 24,
-    "UnitId": 10,
-    "Cost": 123123,
-    "ImagePath": "AddnameOfLeander.jpg",
-    "RulesetId": 2
-  },
-  {
     "Id": 25,
     "UnitId": 11,
     "Cost": 3,
     "ImagePath": "Tribal.jpg",
     "RulesetId": 1
-  },
-  {
-    "Id": 26,
-    "UnitId": 11,
-    "Cost": 123123,
-    "ImagePath": "Add vale for Triabal",
-    "RulesetId": 2
   },
   {
     "Id": 27,
@@ -166,13 +96,6 @@
     "Cost": 26,
     "ImagePath": "Revenge.jpg",
     "RulesetId": 1
-  },
-  {
-    "Id": 38,
-    "UnitId": 17,
-    "Cost": 123213,
-    "ImagePath": "Revenge.jpg",
-    "RulesetId": 2
   },
   {
     "Id": 47,
@@ -473,6 +396,83 @@
     "UnitId": 70,
     "Cost": 30,
     "ImagePath": "Aquilia.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 90,
+    "UnitId": 7,
+    "Cost": 15,
+    "ImagePath": "1_1.jpg",
+    "RulesetId": 2
+  },
+  {
+    "Id": 91,
+    "UnitId": 9,
+    "Cost": 14,
+    "ImagePath": "1_2.jpg",
+    "RulesetId": 2
+  },
+  {
+    "Id": 92,
+    "UnitId": 11,
+    "Cost": 7,
+    "ImagePath": "2_1.jpg",
+    "RulesetId": 2
+  },
+  {
+    "Id": 94,
+    "UnitId": 71,
+    "Cost": 35,
+    "ImagePath": "AndreaDoria.jpg",
+    "RulesetId": 2
+  },
+  {
+    "Id": 95,
+    "UnitId": 72,
+    "Cost": 37,
+    "ImagePath": "4_29.jpg",
+    "RulesetId": 2
+  },
+  {
+    "Id": 96,
+    "UnitId": 73,
+    "Cost": 35,
+    "ImagePath": "Conte.jpg",
+    "RulesetId": 2
+  },
+  {
+    "Id": 97,
+    "UnitId": 74,
+    "Cost": 35,
+    "ImagePath": "AndreaDoria.jpg",
+    "RulesetId": 2
+  },
+  {
+    "Id": 98,
+    "UnitId": 75,
+    "Cost": 6,
+    "ImagePath": "DeRuyter.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 99,
+    "UnitId": 76,
+    "Cost": 6,
+    "ImagePath": "Java.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 100,
+    "UnitId": 77,
+    "Cost": 2,
+    "ImagePath": "Admiralen.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 101,
+    "UnitId": 78,
+    "Cost": 5,
+    "ImagePath": "Tromp.jpg",
     "RulesetId": 1
   }
 ]

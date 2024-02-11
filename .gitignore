@@ -3,6 +3,9 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# I added this. No need to go to github
+Notes-Readme.txt
+
 # User-specific files
 *.rsuser
 *.suo

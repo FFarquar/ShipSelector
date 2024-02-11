@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Content Include="Models\UnitType.cs" />
+    <Content Include="Notes-Readme.txt" />
   </ItemGroup>
 
   <ItemGroup>
@@ -26,6 +27,30 @@
     <Folder Include="wwwroot\ShipImages\1\2\" />
     <Folder Include="wwwroot\ShipImages\2\1\" />
     <Folder Include="wwwroot\ShipImages\2\2\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot\Data\alliances.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\Data\countries.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\Data\gameSystemSpecific.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\Data\ruleSets.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\Data\subUnitTypes.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\Data\units.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\Data\unitTypes.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>
