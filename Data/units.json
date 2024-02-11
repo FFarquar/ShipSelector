@@ -454,5 +454,69 @@
     "NumberinClass_shipSub": 1,
     "Name_ClassName": "Aquilia",
     "ShipsSubsInClass": "Aquilia"
+  },
+  {
+    "Id": 71,
+    "SubUnitTypeId": 4,
+    "CountryId": 7,
+    "NumberinClass_shipSub": 1,
+    "Name_ClassName": "Andrea Doria",
+    "ShipsSubsInClass": "Adrea Doria"
+  },
+  {
+    "Id": 72,
+    "SubUnitTypeId": 4,
+    "CountryId": 7,
+    "NumberinClass_shipSub": 1,
+    "Name_ClassName": "Caio Duilio",
+    "ShipsSubsInClass": "Caio Duilio"
+  },
+  {
+    "Id": 73,
+    "SubUnitTypeId": 4,
+    "CountryId": 7,
+    "NumberinClass_shipSub": 1,
+    "Name_ClassName": "Conte Di Cavour",
+    "ShipsSubsInClass": "Conte Di Cavour"
+  },
+  {
+    "Id": 74,
+    "SubUnitTypeId": 4,
+    "CountryId": 7,
+    "NumberinClass_shipSub": 1,
+    "Name_ClassName": "Conte Di Cavour",
+    "ShipsSubsInClass": "Andrea Doria"
+  },
+  {
+    "Id": 75,
+    "SubUnitTypeId": 7,
+    "CountryId": 9,
+    "NumberinClass_shipSub": 1,
+    "Name_ClassName": "De Ruyter",
+    "ShipsSubsInClass": "De Ruyter"
+  },
+  {
+    "Id": 76,
+    "SubUnitTypeId": 7,
+    "CountryId": 9,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "Java",
+    "ShipsSubsInClass": "Java"
+  },
+  {
+    "Id": 77,
+    "SubUnitTypeId": 8,
+    "CountryId": 9,
+    "NumberinClass_shipSub": 8,
+    "Name_ClassName": "Admiralen",
+    "ShipsSubsInClass": "Hr. Ms. Van Galen, Hr. Ms. Witte de With, Hr. Ms. Piet Hein, Hr. Ms. Van Ghent, Hr. Ms. Evertsen, Hr. Ms. Kortenaer"
+  },
+  {
+    "Id": 78,
+    "SubUnitTypeId": 8,
+    "CountryId": 9,
+    "NumberinClass_shipSub": 1,
+    "Name_ClassName": "Tromp",
+    "ShipsSubsInClass": ""
   }
 ]
