@@ -474,5 +474,348 @@
     "Cost": 5,
     "ImagePath": "Tromp.jpg",
     "RulesetId": 1
+  },
+  {
+    "Id": 102,
+    "UnitId": 79,
+    "Cost": 30,
+    "ImagePath": "Kongo.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 103,
+    "UnitId": 80,
+    "Cost": 35,
+    "ImagePath": "Nagato.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 104,
+    "UnitId": 81,
+    "Cost": 30,
+    "ImagePath": "Fuso.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 105,
+    "UnitId": 82,
+    "Cost": 30,
+    "ImagePath": "Ise.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 106,
+    "UnitId": 83,
+    "Cost": 41,
+    "ImagePath": "Yamato.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 107,
+    "UnitId": 84,
+    "Cost": 23,
+    "ImagePath": "Takao.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 108,
+    "UnitId": 85,
+    "Cost": 23,
+    "ImagePath": "Tone.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 109,
+    "UnitId": 86,
+    "Cost": 6,
+    "ImagePath": "Agano.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 111,
+    "UnitId": 87,
+    "Cost": 5,
+    "ImagePath": "Kuma.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 112,
+    "UnitId": 88,
+    "Cost": 6,
+    "ImagePath": "Sendai.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 113,
+    "UnitId": 89,
+    "Cost": 5,
+    "ImagePath": "Nagara.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 114,
+    "UnitId": 90,
+    "Cost": 5,
+    "ImagePath": "Tenryu.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 115,
+    "UnitId": 91,
+    "Cost": 14,
+    "ImagePath": "Aoba.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 116,
+    "UnitId": 92,
+    "Cost": 14,
+    "ImagePath": "Aoba.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 117,
+    "UnitId": 93,
+    "Cost": 17,
+    "ImagePath": "Mogami.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 118,
+    "UnitId": 94,
+    "Cost": 7,
+    "ImagePath": "Yubari.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 119,
+    "UnitId": 95,
+    "Cost": 2,
+    "ImagePath": "Chitose.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 120,
+    "UnitId": 96,
+    "Cost": 17,
+    "ImagePath": "Myoko.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 121,
+    "UnitId": 97,
+    "Cost": 10,
+    "ImagePath": "Kitakami.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 122,
+    "UnitId": 98,
+    "Cost": 3,
+    "ImagePath": "Shiratsuyu.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 123,
+    "UnitId": 99,
+    "Cost": 3,
+    "ImagePath": "Hatshurau.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 124,
+    "UnitId": 100,
+    "Cost": 3,
+    "ImagePath": "Asashio.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 125,
+    "UnitId": 101,
+    "Cost": 3,
+    "ImagePath": "Kagero.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 126,
+    "UnitId": 102,
+    "Cost": 3,
+    "ImagePath": "Yugumo.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 127,
+    "UnitId": 103,
+    "Cost": 5,
+    "ImagePath": "Shimakaze.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 128,
+    "UnitId": 104,
+    "Cost": 2,
+    "ImagePath": "Mutsuki.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 129,
+    "UnitId": 105,
+    "Cost": 2,
+    "ImagePath": "Wakataki.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 130,
+    "UnitId": 106,
+    "Cost": 2,
+    "ImagePath": "Kamikaze.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 131,
+    "UnitId": 107,
+    "Cost": 2,
+    "ImagePath": "Minekaze.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 132,
+    "UnitId": 108,
+    "Cost": 3,
+    "ImagePath": "Akatsuki.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 133,
+    "UnitId": 109,
+    "Cost": 3,
+    "ImagePath": "Fubuki.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 134,
+    "UnitId": 110,
+    "Cost": 2,
+    "ImagePath": "Matsu 44.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 135,
+    "UnitId": 111,
+    "Cost": 3,
+    "ImagePath": "Akizuki.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 136,
+    "UnitId": 112,
+    "Cost": 3,
+    "ImagePath": "Fuytsuki.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 137,
+    "UnitId": 113,
+    "Cost": 40,
+    "ImagePath": "Kaga.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 138,
+    "UnitId": 114,
+    "Cost": 40,
+    "ImagePath": "Akagi.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 139,
+    "UnitId": 115,
+    "Cost": 2,
+    "ImagePath": "Shokaku.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 140,
+    "UnitId": 116,
+    "Cost": 1,
+    "ImagePath": "Hiryu.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 141,
+    "UnitId": 117,
+    "Cost": 35,
+    "ImagePath": "Soryu.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 142,
+    "UnitId": 118,
+    "Cost": 30,
+    "ImagePath": "Hiyo.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 143,
+    "UnitId": 119,
+    "Cost": 20,
+    "ImagePath": "Zuiho.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 144,
+    "UnitId": 120,
+    "Cost": 25,
+    "ImagePath": "Ryujo.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 145,
+    "UnitId": 121,
+    "Cost": 15,
+    "ImagePath": "Hosho.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 146,
+    "UnitId": 122,
+    "Cost": 20,
+    "ImagePath": "Chitose 44.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 147,
+    "UnitId": 123,
+    "Cost": 20,
+    "ImagePath": "Ryuho 44.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 148,
+    "UnitId": 124,
+    "Cost": 40,
+    "ImagePath": "Taiho 44.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 149,
+    "UnitId": 125,
+    "Cost": 35,
+    "ImagePath": "Unryu 44.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 150,
+    "UnitId": 126,
+    "Cost": 35,
+    "ImagePath": "Shinano 44.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 151,
+    "UnitId": 128,
+    "Cost": 10,
+    "ImagePath": "Kaiyo 44.jpg",
+    "RulesetId": 1
   }
 ]
