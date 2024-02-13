@@ -518,5 +518,405 @@
     "NumberinClass_shipSub": 1,
     "Name_ClassName": "Tromp",
     "ShipsSubsInClass": ""
+  },
+  {
+    "Id": 79,
+    "SubUnitTypeId": 5,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 4,
+    "Name_ClassName": "Kongo",
+    "ShipsSubsInClass": "Myoko, Nachi, Haguro, Ashigara"
+  },
+  {
+    "Id": 80,
+    "SubUnitTypeId": 4,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "Nagato",
+    "ShipsSubsInClass": "Nagato"
+  },
+  {
+    "Id": 81,
+    "SubUnitTypeId": 4,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "Fuso",
+    "ShipsSubsInClass": "Fuso, Yamashiro"
+  },
+  {
+    "Id": 82,
+    "SubUnitTypeId": 4,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "Ise",
+    "ShipsSubsInClass": "Ise"
+  },
+  {
+    "Id": 83,
+    "SubUnitTypeId": 4,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "Yamato",
+    "ShipsSubsInClass": "Yamato, Fuso"
+  },
+  {
+    "Id": 84,
+    "SubUnitTypeId": 6,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 4,
+    "Name_ClassName": "Takao",
+    "ShipsSubsInClass": "Atagao"
+  },
+  {
+    "Id": 85,
+    "SubUnitTypeId": 6,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "Tone",
+    "ShipsSubsInClass": "Tone, Chikuma"
+  },
+  {
+    "Id": 86,
+    "SubUnitTypeId": 7,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 4,
+    "Name_ClassName": "Agano",
+    "ShipsSubsInClass": "Agano, Yahagi, Noshiro, Sakawa"
+  },
+  {
+    "Id": 87,
+    "SubUnitTypeId": 7,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 5,
+    "Name_ClassName": "Kuma",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 88,
+    "SubUnitTypeId": 7,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 4,
+    "Name_ClassName": "Sendai",
+    "ShipsSubsInClass": "Sendai, Naka, Jintsu, Ayase"
+  },
+  {
+    "Id": 89,
+    "SubUnitTypeId": 7,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 6,
+    "Name_ClassName": "Nagara",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 90,
+    "SubUnitTypeId": 7,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "Tenryu",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 91,
+    "SubUnitTypeId": 6,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "Aoba",
+    "ShipsSubsInClass": "Aoba, Kinugasa"
+  },
+  {
+    "Id": 92,
+    "SubUnitTypeId": 6,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "Furutaka",
+    "ShipsSubsInClass": "Furutaka, Kako"
+  },
+  {
+    "Id": 93,
+    "SubUnitTypeId": 6,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 4,
+    "Name_ClassName": "Mogami",
+    "ShipsSubsInClass": "Mogami, Kumano, Suzuya, Mikuma"
+  },
+  {
+    "Id": 94,
+    "SubUnitTypeId": 7,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 1,
+    "Name_ClassName": "Yubari",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 95,
+    "SubUnitTypeId": 7,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "Chitose",
+    "ShipsSubsInClass": "Chitose, Nishin"
+  },
+  {
+    "Id": 96,
+    "SubUnitTypeId": 6,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 4,
+    "Name_ClassName": "Myoko",
+    "ShipsSubsInClass": "Myoko, Nachi, Haguro, Ashigara"
+  },
+  {
+    "Id": 97,
+    "SubUnitTypeId": 7,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "Kitakami",
+    "ShipsSubsInClass": "Kitakami, Oi"
+  },
+  {
+    "Id": 98,
+    "SubUnitTypeId": 8,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 10,
+    "Name_ClassName": "Shiratsuyu",
+    "ShipsSubsInClass": "Murasme, Shigure, Shiratsuyu, Umikaze, Suzukaze, Yamakaze, Harusame,Samdare, Yudachi, Kawakaze"
+  },
+  {
+    "Id": 99,
+    "SubUnitTypeId": 8,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 6,
+    "Name_ClassName": "Hatsuharu",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 100,
+    "SubUnitTypeId": 8,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 10,
+    "Name_ClassName": "Asashio",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 101,
+    "SubUnitTypeId": 8,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 19,
+    "Name_ClassName": "Kagero",
+    "ShipsSubsInClass": "Hamakaze, Yukikaze, Hagikaze, Hatsukaze, Urakaze, Maikaze, Isokaze, Hayashio, Kuroshio, Hatsukaze, Kagero, Natsushio, Oyashio, Shiranui, Tokitsukaze, Amatsukaze, Tanikaze, Nowaki, Isokaze"
+  },
+  {
+    "Id": 102,
+    "SubUnitTypeId": 8,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 19,
+    "Name_ClassName": "Yugomo",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 103,
+    "SubUnitTypeId": 8,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 1,
+    "Name_ClassName": "Shimakaze",
+    "ShipsSubsInClass": "Shimakaze"
+  },
+  {
+    "Id": 104,
+    "SubUnitTypeId": 8,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 12,
+    "Name_ClassName": "Mutsuki",
+    "ShipsSubsInClass": "Nagatsuki, Satsuki, Uzuki, Mikazuki, Mutsuki"
+  },
+  {
+    "Id": 105,
+    "SubUnitTypeId": 8,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 8,
+    "Name_ClassName": "Wakataki",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 106,
+    "SubUnitTypeId": 8,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 9,
+    "Name_ClassName": "Kamikaze",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 107,
+    "SubUnitTypeId": 8,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 15,
+    "Name_ClassName": "Minekaze",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 108,
+    "SubUnitTypeId": 8,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 11,
+    "Name_ClassName": "Akatsuki",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 109,
+    "SubUnitTypeId": 8,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 24,
+    "Name_ClassName": "Fubuki",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 110,
+    "SubUnitTypeId": 8,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 32,
+    "Name_ClassName": "Matsu",
+    "ShipsSubsInClass": "Kashi, Matsu, Kuwa, Maki, Take, Ume, Kiri, Momo, Sugi, Kaya"
+  },
+  {
+    "Id": 111,
+    "SubUnitTypeId": 8,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 7,
+    "Name_ClassName": "Akizuki",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 112,
+    "SubUnitTypeId": 8,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 4,
+    "Name_ClassName": "Fuyutsuki",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 113,
+    "SubUnitTypeId": 1,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 1,
+    "Name_ClassName": "Kaga",
+    "ShipsSubsInClass": "Kaga"
+  },
+  {
+    "Id": 114,
+    "SubUnitTypeId": 1,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 1,
+    "Name_ClassName": "Akagi",
+    "ShipsSubsInClass": "Akagi"
+  },
+  {
+    "Id": 115,
+    "SubUnitTypeId": 1,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "Shokaku",
+    "ShipsSubsInClass": "Shokaku, Zuikaku"
+  },
+  {
+    "Id": 116,
+    "SubUnitTypeId": 1,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 1,
+    "Name_ClassName": "Hiryu",
+    "ShipsSubsInClass": ""
+  },
+  {
+    "Id": 117,
+    "SubUnitTypeId": 1,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 1,
+    "Name_ClassName": "Soryu",
+    "ShipsSubsInClass": "Soryu"
+  },
+  {
+    "Id": 118,
+    "SubUnitTypeId": 1,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "Hiyo",
+    "ShipsSubsInClass": "Junyo"
+  },
+  {
+    "Id": 119,
+    "SubUnitTypeId": 3,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "Zuiho",
+    "ShipsSubsInClass": "Zuiho, Shoho"
+  },
+  {
+    "Id": 120,
+    "SubUnitTypeId": 3,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 1,
+    "Name_ClassName": "Ryujo",
+    "ShipsSubsInClass": "Ryujo"
+  },
+  {
+    "Id": 121,
+    "SubUnitTypeId": 3,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 1,
+    "Name_ClassName": "Hosho",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 122,
+    "SubUnitTypeId": 3,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "Chitose",
+    "ShipsSubsInClass": "Chitose, Nishin"
+  },
+  {
+    "Id": 123,
+    "SubUnitTypeId": 3,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 1,
+    "Name_ClassName": "Ryuho",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 124,
+    "SubUnitTypeId": 3,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 1,
+    "Name_ClassName": "Taiho",
+    "ShipsSubsInClass": "Taiho"
+  },
+  {
+    "Id": 125,
+    "SubUnitTypeId": 1,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 3,
+    "Name_ClassName": "Unryu",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 126,
+    "SubUnitTypeId": 1,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 1,
+    "Name_ClassName": "Shinano",
+    "ShipsSubsInClass": "Shinano"
+  },
+  {
+    "Id": 127,
+    "SubUnitTypeId": 2,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 3,
+    "Name_ClassName": "Taiyo",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 128,
+    "SubUnitTypeId": 2,
+    "CountryId": 8,
+    "NumberinClass_shipSub": 1,
+    "Name_ClassName": "Kaiyo",
+    "ShipsSubsInClass": null
   }
 ]
