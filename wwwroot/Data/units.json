@@ -918,5 +918,333 @@
     "NumberinClass_shipSub": 1,
     "Name_ClassName": "Kaiyo",
     "ShipsSubsInClass": null
+  },
+  {
+    "Id": 129,
+    "SubUnitTypeId": 4,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 3,
+    "Name_ClassName": "Colorado",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 130,
+    "SubUnitTypeId": 4,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "New York",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 131,
+    "SubUnitTypeId": 4,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "Pennsylvania",
+    "ShipsSubsInClass": "USS Pennsylvania, USS Arizona"
+  },
+  {
+    "Id": 132,
+    "SubUnitTypeId": 4,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "Nevada",
+    "ShipsSubsInClass": "USS Nevada, USS Oklahoma"
+  },
+  {
+    "Id": 133,
+    "SubUnitTypeId": 4,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 3,
+    "Name_ClassName": "New Mexico",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 134,
+    "SubUnitTypeId": 4,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "Tennesse",
+    "ShipsSubsInClass": "USS Tennessee, USS California"
+  },
+  {
+    "Id": 135,
+    "SubUnitTypeId": 4,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "North Carolina",
+    "ShipsSubsInClass": "USS North Carolina, USS Washington"
+  },
+  {
+    "Id": 136,
+    "SubUnitTypeId": 4,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 4,
+    "Name_ClassName": "South Dakota",
+    "ShipsSubsInClass": "USS South Dakota, USS Indiana, USS Massachusetts, USS Alabama"
+  },
+  {
+    "Id": 137,
+    "SubUnitTypeId": 4,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 4,
+    "Name_ClassName": "Iowa",
+    "ShipsSubsInClass": "USS Iowa, USS Wisconsin, USS New Jersey, USS Missouri"
+  },
+  {
+    "Id": 138,
+    "SubUnitTypeId": 7,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 10,
+    "Name_ClassName": "Omaha",
+    "ShipsSubsInClass": "USS Omaha, USS Richmond, USS Concord, USS Detroit, USS Cincinnati, USS Marblehead"
+  },
+  {
+    "Id": 139,
+    "SubUnitTypeId": 7,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 9,
+    "Name_ClassName": "Brooklyn",
+    "ShipsSubsInClass": "USS Brooklyn, USS Honolulu, USS Philadelphia, USS Boise , USS Phonenix, USS Nashville, USS Savannah, USS St Louis, USS Helena"
+  },
+  {
+    "Id": 140,
+    "SubUnitTypeId": 7,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "St. Louis",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 141,
+    "SubUnitTypeId": 7,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 27,
+    "Name_ClassName": "Cleveland",
+    "ShipsSubsInClass": "USS Cleveland, USS Santa Fe, USSTallahassee, USS Columbia, USS Mobile, USS Passadena, USS Montpellar, USS Denver, USS Biloxi"
+  },
+  {
+    "Id": 142,
+    "SubUnitTypeId": 6,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 1,
+    "Name_ClassName": "Wichita",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 143,
+    "SubUnitTypeId": 7,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 4,
+    "Name_ClassName": "Atlanta",
+    "ShipsSubsInClass": "USS Atlanta, USS San Dieago, USS Juneau, USS San Juan"
+  },
+  {
+    "Id": 144,
+    "SubUnitTypeId": 7,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 4,
+    "Name_ClassName": "Oakland",
+    "ShipsSubsInClass": "USS Reno, USS Flint"
+  },
+  {
+    "Id": 145,
+    "SubUnitTypeId": 6,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 7,
+    "Name_ClassName": "New Orelans",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 146,
+    "SubUnitTypeId": 6,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "Portland",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 147,
+    "SubUnitTypeId": 6,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 6,
+    "Name_ClassName": "Northampton",
+    "ShipsSubsInClass": "USS Houston, USS Northampton, USS Chicago"
+  },
+  {
+    "Id": 148,
+    "SubUnitTypeId": 6,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "Pensacola",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 149,
+    "SubUnitTypeId": 6,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 14,
+    "Name_ClassName": "Baltimore",
+    "ShipsSubsInClass": "USS Baltimore, USS Boston, USS Pittsburgh, USS Saint Paul, USS Columbus"
+  },
+  {
+    "Id": 150,
+    "SubUnitTypeId": 8,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 8,
+    "Name_ClassName": "Farragut",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 151,
+    "SubUnitTypeId": 8,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 8,
+    "Name_ClassName": "Porter",
+    "ShipsSubsInClass": "USS Porter, USS Winslow, USS Selfridge, USS Phelps"
+  },
+  {
+    "Id": 152,
+    "SubUnitTypeId": 8,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 18,
+    "Name_ClassName": "Mahan",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 153,
+    "SubUnitTypeId": 8,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 12,
+    "Name_ClassName": "Sims",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 154,
+    "SubUnitTypeId": 8,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 156,
+    "Name_ClassName": "Clemson",
+    "ShipsSubsInClass": "USS Edsall, USS Alden, USS Clemson, USS Long, USS Borie, USS Pope"
+  },
+  {
+    "Id": 155,
+    "SubUnitTypeId": 8,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 8,
+    "Name_ClassName": "Bagley",
+    "ShipsSubsInClass": "USS Bagley, USS Helm, USS Mugford, USS Jarvis"
+  },
+  {
+    "Id": 156,
+    "SubUnitTypeId": 8,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 10,
+    "Name_ClassName": "Benham",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 157,
+    "SubUnitTypeId": 8,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 175,
+    "Name_ClassName": "Fletcher",
+    "ShipsSubsInClass": "USS Nicholas, USS Radford, USS Taylor, USS La Vallett, USS Abbot, USS Jenkins, USS Black, USS Cowell, USS Bullard, USS Hoel, USS Fletcher, USS O'Bannon, USS Kidd, USS Safley, USS Chevalier, USS Dyson"
+  },
+  {
+    "Id": 158,
+    "SubUnitTypeId": 8,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 66,
+    "Name_ClassName": "Gleaves",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 159,
+    "SubUnitTypeId": 8,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 30,
+    "Name_ClassName": "Benson",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 160,
+    "SubUnitTypeId": 1,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "Lexington",
+    "ShipsSubsInClass": "USS Lexington, USS Saratoga"
+  },
+  {
+    "Id": 161,
+    "SubUnitTypeId": 1,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 3,
+    "Name_ClassName": "Yorktown",
+    "ShipsSubsInClass": "USS Yorktown, USS Hornet, USS Enterprise"
+  },
+  {
+    "Id": 162,
+    "SubUnitTypeId": 1,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 1,
+    "Name_ClassName": "Wasp",
+    "ShipsSubsInClass": "USS Wasp"
+  },
+  {
+    "Id": 163,
+    "SubUnitTypeId": 1,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 1,
+    "Name_ClassName": "Ranger",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 164,
+    "SubUnitTypeId": 1,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 24,
+    "Name_ClassName": "Essex",
+    "ShipsSubsInClass": "USS Essex, USS Intrepid"
+  },
+  {
+    "Id": 165,
+    "SubUnitTypeId": 3,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 9,
+    "Name_ClassName": "Independence",
+    "ShipsSubsInClass": "USS Princeton, USS Cowpens, USS Independence"
+  },
+  {
+    "Id": 166,
+    "SubUnitTypeId": 2,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 50,
+    "Name_ClassName": "Casablanca",
+    "ShipsSubsInClass": "USS Savo Island, USS St. Lo, USS Mission Bay, USS Saginaw Bay, USS Guadalcanal, USS Tripolo, USS Tulagi, USS Liscome Bay, USS Gambier Bay"
+  },
+  {
+    "Id": 167,
+    "SubUnitTypeId": 2,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 1,
+    "Name_ClassName": "Sangamon",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 168,
+    "SubUnitTypeId": 2,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 45,
+    "Name_ClassName": "Bogue",
+    "ShipsSubsInClass": null
+  },
+  {
+    "Id": 169,
+    "SubUnitTypeId": 2,
+    "CountryId": 15,
+    "NumberinClass_shipSub": 19,
+    "Name_ClassName": "Commencement Bay",
+    "ShipsSubsInClass": ""
   }
 ]
