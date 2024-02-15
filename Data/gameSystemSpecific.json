@@ -817,5 +817,285 @@
     "Cost": 10,
     "ImagePath": "Kaiyo 44.jpg",
     "RulesetId": 1
+  },
+  {
+    "Id": 152,
+    "UnitId": 129,
+    "Cost": 30,
+    "ImagePath": "Colorado.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 153,
+    "UnitId": 130,
+    "Cost": 26,
+    "ImagePath": "New York.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 154,
+    "UnitId": 131,
+    "Cost": 30,
+    "ImagePath": "Pennsylvania.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 155,
+    "UnitId": 132,
+    "Cost": 30,
+    "ImagePath": "Nevada.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 156,
+    "UnitId": 133,
+    "Cost": 30,
+    "ImagePath": "New Mexico.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 157,
+    "UnitId": 134,
+    "Cost": 30,
+    "ImagePath": "Tennessee.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 158,
+    "UnitId": 136,
+    "Cost": 41,
+    "ImagePath": "South Dakota.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 159,
+    "UnitId": 137,
+    "Cost": 48,
+    "ImagePath": "Iowa 44.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 160,
+    "UnitId": 138,
+    "Cost": 5,
+    "ImagePath": "Omaha.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 161,
+    "UnitId": 139,
+    "Cost": 9,
+    "ImagePath": "Brooklyn.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 162,
+    "UnitId": 140,
+    "Cost": 11,
+    "ImagePath": "St Louis.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 163,
+    "UnitId": 141,
+    "Cost": 11,
+    "ImagePath": "Cleveland.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 164,
+    "UnitId": 142,
+    "Cost": 20,
+    "ImagePath": "Wichita.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 165,
+    "UnitId": 143,
+    "Cost": 9,
+    "ImagePath": "Atlanta.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 166,
+    "UnitId": 144,
+    "Cost": 9,
+    "ImagePath": "Oakland.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 167,
+    "UnitId": 145,
+    "Cost": 20,
+    "ImagePath": "New Orleans.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 168,
+    "UnitId": 146,
+    "Cost": 20,
+    "ImagePath": "Portland.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 169,
+    "UnitId": 147,
+    "Cost": 17,
+    "ImagePath": "Northampton.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 170,
+    "UnitId": 148,
+    "Cost": 17,
+    "ImagePath": "Pensacola.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 171,
+    "UnitId": 149,
+    "Cost": 23,
+    "ImagePath": "Baltimore 44.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 172,
+    "UnitId": 150,
+    "Cost": 3,
+    "ImagePath": "Farragut.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 173,
+    "UnitId": 151,
+    "Cost": 4,
+    "ImagePath": "Porter.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 174,
+    "UnitId": 152,
+    "Cost": 4,
+    "ImagePath": "Mahan.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 175,
+    "UnitId": 153,
+    "Cost": 4,
+    "ImagePath": "Sims.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 176,
+    "UnitId": 154,
+    "Cost": 2,
+    "ImagePath": "Clemson.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 177,
+    "UnitId": 155,
+    "Cost": 4,
+    "ImagePath": "Bagley.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 178,
+    "UnitId": 156,
+    "Cost": 4,
+    "ImagePath": "Benham.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 179,
+    "UnitId": 157,
+    "Cost": 4,
+    "ImagePath": "Fletcher.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 180,
+    "UnitId": 158,
+    "Cost": 4,
+    "ImagePath": "Gleaves.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 181,
+    "UnitId": 159,
+    "Cost": 4,
+    "ImagePath": "Benson.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 182,
+    "UnitId": 160,
+    "Cost": 40,
+    "ImagePath": "Lexington.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 183,
+    "UnitId": 161,
+    "Cost": 35,
+    "ImagePath": "Yorktown.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 184,
+    "UnitId": 162,
+    "Cost": 30,
+    "ImagePath": "Wasp.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 185,
+    "UnitId": 163,
+    "Cost": 25,
+    "ImagePath": "Ranger.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 186,
+    "UnitId": 164,
+    "Cost": 40,
+    "ImagePath": "Essex 44.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 187,
+    "UnitId": 165,
+    "Cost": 20,
+    "ImagePath": "Independence 44.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 188,
+    "UnitId": 166,
+    "Cost": 10,
+    "ImagePath": "Casablanca 44.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 189,
+    "UnitId": 167,
+    "Cost": 10,
+    "ImagePath": "Sangamon 44.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 190,
+    "UnitId": 168,
+    "Cost": 10,
+    "ImagePath": "Bogue 44.jpg",
+    "RulesetId": 1
+  },
+  {
+    "Id": 191,
+    "UnitId": 169,
+    "Cost": 15,
+    "ImagePath": "Commencement Bay 44.jpg",
+    "RulesetId": 1
   }
 ]
