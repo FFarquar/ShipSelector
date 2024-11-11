@@ -1246,5 +1246,53 @@
     "NumberinClass_shipSub": 19,
     "Name_ClassName": "Commencement Bay",
     "ShipsSubsInClass": ""
+  },
+  {
+    "Id": 170,
+    "SubUnitTypeId": 4,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 1,
+    "Name_ClassName": "Canada",
+    "ShipsSubsInClass": "HMS Canada"
+  },
+  {
+    "Id": 171,
+    "SubUnitTypeId": 4,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 1,
+    "Name_ClassName": "Erin",
+    "ShipsSubsInClass": "HMS Erin"
+  },
+  {
+    "Id": 172,
+    "SubUnitTypeId": 19,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 4,
+    "Name_ClassName": "Monmouth",
+    "ShipsSubsInClass": "HMS Monmouth"
+  },
+  {
+    "Id": 173,
+    "SubUnitTypeId": 7,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 3,
+    "Name_ClassName": "Active",
+    "ShipsSubsInClass": "HMS Active"
+  },
+  {
+    "Id": 174,
+    "SubUnitTypeId": 7,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 21,
+    "Name_ClassName": "Chatham",
+    "ShipsSubsInClass": "HMS Chatham"
+  },
+  {
+    "Id": 175,
+    "SubUnitTypeId": 7,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 4,
+    "Name_ClassName": "Weymouth",
+    "ShipsSubsInClass": "HMS Weymouth"
   }
 ]

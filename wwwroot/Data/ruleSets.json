@@ -8,5 +8,10 @@
     "Id": 2,
     "RulesetName": "Axis and Allies War At sea",
     "AllowUnlimitedNumberOfAirCraftSelections": false
+  },
+  {
+    "Id": 3,
+    "RulesetName": "Broadsides - Empires of Steel",
+    "AllowUnlimitedNumberOfAirCraftSelections": false
   }
 ]

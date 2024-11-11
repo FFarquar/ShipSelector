@@ -10,7 +10,7 @@
 @{var totalImagesInserted = 0;}
 @{var totalNamesInserted= 0;}
 
-    @for (var p = 0; p < numberOfPagesRequired; p++)
+    @for (  var p = 0; p < numberOfPagesRequired; p++)
     {
     <div class="sheet-outer A4">
 
@@ -66,6 +66,7 @@
                                         @if (totalImagesInserted < UnitsToPrint.Count)
                                         {
                                             var srcLocationLocal = "ShipImages/" + @RuleSetId + "/" + @UnitsToPrint[@totalImagesInserted].Countryobj.Id + "/" + @UnitsToPrint[@totalImagesInserted].ImagePath;
+                                            Console.WriteLine("srcLocationLocal = " + @srcLocationLocal);
                                             <td>
                                                 @*<img src=@srcLocationLocal style="max-width:300px;max-height:300px"/>*@
                                                 @if(@RuleSetId ==1)
@@ -77,7 +78,11 @@
                                                         @*<img src=@srcLocationLocal width="230" height="345"/>           *@
                                                         <img src=@srcLocationLocal width="254" height="350"/>           
                                                     }
-                                            </td>
+                                                @if(@RuleSetId ==3)
+                                                    {
+                                                        @*<img src=@srcLocationLocal width="230" height="345"/>           *@
+                                                        <img src=@srcLocationLocal width="342" height="200"/>           
+                                                    }                                            </td>
                                             totalImagesInserted= totalImagesInserted + 1;
                                         }
                                     Console.WriteLine("totalImagesInserted " + @totalImagesInserted);
@@ -159,7 +164,23 @@
                 }
             }
         }
+        if(RuleSetId == 3)
+        {
+            numberRowsPerPage = 3;
+            numberImagesPerRow = 3;
 
+            for (var i = 0; i < SelectedUnits.Count; i++)
+            {
+                if(SelectedUnits[i].NumberSelected > 0 && SelectedUnits[i].subUnitTypeObj.UnitTypeId ==1)
+                {
+                    //If several of the same unit have been selected, they need to be added to the collection each time
+                    for (var a = 0; a < SelectedUnits[i].NumberSelected; a++)
+                    {
+                        UnitsToPrint.Add(SelectedUnits[i]);
+                    }
+                }
+            }
+        }
 
         numberOfPagesRequired = (UnitsToPrint.Count()+ (numberRowsPerPage * numberImagesPerRow-1)) / (numberRowsPerPage * numberImagesPerRow);
         StateHasChanged();

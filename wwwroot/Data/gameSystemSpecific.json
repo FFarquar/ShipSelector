@@ -1097,5 +1097,54 @@
     "Cost": 15,
     "ImagePath": "Commencement Bay 44.jpg",
     "RulesetId": 1
+  },
+  {
+    "Id": 192,
+    "UnitId": 6,
+    "Cost": 282,
+    "ImagePath": "Queen_Elizabeth.jpg",
+    "RulesetId": 3
+  },
+  {
+    "Id": 193,
+    "UnitId": 170,
+    "Cost": 206,
+    "ImagePath": "Canada.jpg",
+    "RulesetId": 3
+  },
+  {
+    "Id": 194,
+    "UnitId": 171,
+    "Cost": 202,
+    "ImagePath": "Erin.jpg",
+    "RulesetId": 3
+  },
+  {
+    "Id": 195,
+    "UnitId": 172,
+    "Cost": 60,
+    "ImagePath": "Monmouth.jpg",
+    "RulesetId": 3
+  },
+  {
+    "Id": 196,
+    "UnitId": 173,
+    "Cost": 24,
+    "ImagePath": "Active.jpg",
+    "RulesetId": 3
+  },
+  {
+    "Id": 197,
+    "UnitId": 174,
+    "Cost": 40,
+    "ImagePath": "Chatham.jpg",
+    "RulesetId": 3
+  },
+  {
+    "Id": 198,
+    "UnitId": 175,
+    "Cost": 36,
+    "ImagePath": "Weymouth.jpg",
+    "RulesetId": 3
   }
 ]
