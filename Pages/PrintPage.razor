@@ -6,13 +6,19 @@
 @inject IUnitsandListsServiceClient ULSC
 
 
+<head>
+    @*<link rel="stylesheet" id="PRINTLAYOUT" href="css/landscape.css" type="text/css" />*@
+    <link rel="stylesheet" id="PRINTLAYOUT" href=@pageLayouthref type="text/css" />
+</head>
+ 
 
 @{var totalImagesInserted = 0;}
 @{var totalNamesInserted= 0;}
 
     @for (  var p = 0; p < numberOfPagesRequired; p++)
     {
-    <div class="sheet-outer A4">
+    @*<div class="sheet-outer A4">*@
+        <div class=@pageLayoutStyle>
 
         <section class="sheet padding-5mm">
             <article>
@@ -81,7 +87,7 @@
                                                 @if(@RuleSetId ==3)
                                                     {
                                                         @*<img src=@srcLocationLocal width="230" height="345"/>           *@
-                                                        <img src=@srcLocationLocal width="500" height="250"/>           
+                                                        <img src=@srcLocationLocal width="600" height="300"/>           
                                                     }                                            </td>
                                             totalImagesInserted= totalImagesInserted + 1;
                                         }
@@ -103,6 +109,8 @@
     [Parameter]
     public bool ChooseFromOwnedColleciton { get; set; } = false;
 
+    public string pageLayoutStyle = "sheet-outer A4";   //default is this style which is landscape
+    public string pageLayouthref = "css/landscape.css";     //the css to set the print layout correctly. default to landscape
     public int numberRowsPerPage = 0;
     public int numberImagesPerRow = 0;
     public int numberOfPagesRequired = 0;
@@ -166,8 +174,11 @@
         }
         if(RuleSetId == 3)
         {
-            numberRowsPerPage = 2;
-            numberImagesPerRow = 2;
+
+            pageLayoutStyle = "sheet-outer Portrait";
+            pageLayouthref = "css/portrait.css";
+            numberRowsPerPage = 3;
+            numberImagesPerRow = 1;
 
             for (var i = 0; i < SelectedUnits.Count; i++)
             {
@@ -181,6 +192,7 @@
                 }
             }
         }
+
 
         numberOfPagesRequired = (UnitsToPrint.Count()+ (numberRowsPerPage * numberImagesPerRow-1)) / (numberRowsPerPage * numberImagesPerRow);
         StateHasChanged();

@@ -37,9 +37,17 @@ body {margin: 0}
     border-style: solid;
     border-color: black;
 }*/
+
+/*Landscape settings*/
 .sheet-outer.A4 .sheet {
     width: 285mm;
     height: 200mm;
+}
+
+/*A4 Portrait settings*/
+.sheet-outer.Portrait .sheet {
+    width: 210mm;
+    height: 297mm;
 }
 
 .sheet.padding-5mm {
@@ -51,13 +59,10 @@ body {margin: 0}
     margin: 0
 }
 
-/*@media print {
-    .sheet-outer.A4, .sheet-outer.A5.landscape {
-        width: 210mm
-    }
-}*/
-@media print {
-    @page {
-        size: landscape;
-     }
+
+    /*@media print {
+        @page {*/
+            /*size: landscape;*/
+    
+        }*/
 }

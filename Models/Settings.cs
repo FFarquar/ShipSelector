@@ -15,6 +15,6 @@ namespace ShipSelector.Models
         public const long tokenLengthDays = 7;
         public const int maxFilesToUpload = 1;
         public const long maxFileSize = 4000000;
-        public const string version = "1.6";
+        public const string version = "1.7";
     }
 }
