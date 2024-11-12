@@ -1097,5 +1097,103 @@
     "Cost": 15,
     "ImagePath": "Commencement Bay 44.jpg",
     "RulesetId": 1
+  },
+  {
+    "Id": 192,
+    "UnitId": 6,
+    "Cost": 282,
+    "ImagePath": "Queen_Elizabeth.jpg",
+    "RulesetId": 3
+  },
+  {
+    "Id": 193,
+    "UnitId": 170,
+    "Cost": 206,
+    "ImagePath": "Canada.jpg",
+    "RulesetId": 3
+  },
+  {
+    "Id": 194,
+    "UnitId": 171,
+    "Cost": 202,
+    "ImagePath": "Erin.jpg",
+    "RulesetId": 3
+  },
+  {
+    "Id": 195,
+    "UnitId": 172,
+    "Cost": 60,
+    "ImagePath": "Monmouth.jpg",
+    "RulesetId": 3
+  },
+  {
+    "Id": 196,
+    "UnitId": 173,
+    "Cost": 24,
+    "ImagePath": "Active.jpg",
+    "RulesetId": 3
+  },
+  {
+    "Id": 197,
+    "UnitId": 174,
+    "Cost": 40,
+    "ImagePath": "Chatham.jpg",
+    "RulesetId": 3
+  },
+  {
+    "Id": 198,
+    "UnitId": 175,
+    "Cost": 36,
+    "ImagePath": "Weymouth.jpg",
+    "RulesetId": 3
+  },
+  {
+    "Id": 199,
+    "UnitId": 176,
+    "Cost": 80,
+    "ImagePath": "Blucher.jpg",
+    "RulesetId": 3
+  },
+  {
+    "Id": 200,
+    "UnitId": 177,
+    "Cost": 34,
+    "ImagePath": "Graudenz.jpg",
+    "RulesetId": 3
+  },
+  {
+    "Id": 201,
+    "UnitId": 178,
+    "Cost": 30,
+    "ImagePath": "Magdeburg.jpg",
+    "RulesetId": 3
+  },
+  {
+    "Id": 202,
+    "UnitId": 179,
+    "Cost": 142,
+    "ImagePath": "Moltke.jpg",
+    "RulesetId": 3
+  },
+  {
+    "Id": 203,
+    "UnitId": 180,
+    "Cost": 34,
+    "ImagePath": "Pillau.jpg",
+    "RulesetId": 3
+  },
+  {
+    "Id": 204,
+    "UnitId": 181,
+    "Cost": 142,
+    "ImagePath": "Seydlitz.jpg",
+    "RulesetId": 3
+  },
+  {
+    "Id": 205,
+    "UnitId": 182,
+    "Cost": 135,
+    "ImagePath": "VonderTann.jpg",
+    "RulesetId": 3
   }
 ]

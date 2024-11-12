@@ -73,5 +73,10 @@
     "Id": 15,
     "CountryName": "United States",
     "AllianceId": 1
+  },
+  {
+    "Id": 16,
+    "CountryName": "Austria-Hungary",
+    "AllianceId": 2
   }
 ]
