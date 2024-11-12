@@ -1294,5 +1294,61 @@
     "NumberinClass_shipSub": 4,
     "Name_ClassName": "Weymouth",
     "ShipsSubsInClass": "HMS Weymouth"
+  },
+  {
+    "Id": 176,
+    "SubUnitTypeId": 19,
+    "CountryId": 5,
+    "NumberinClass_shipSub": 1,
+    "Name_ClassName": "Blucher",
+    "ShipsSubsInClass": "SMS Blucher"
+  },
+  {
+    "Id": 177,
+    "SubUnitTypeId": 7,
+    "CountryId": 5,
+    "NumberinClass_shipSub": 4,
+    "Name_ClassName": "Graudenz",
+    "ShipsSubsInClass": "SMS Graudenz"
+  },
+  {
+    "Id": 178,
+    "SubUnitTypeId": 7,
+    "CountryId": 5,
+    "NumberinClass_shipSub": 3,
+    "Name_ClassName": "Magdeburg",
+    "ShipsSubsInClass": "SMS Magdeburg"
+  },
+  {
+    "Id": 179,
+    "SubUnitTypeId": 5,
+    "CountryId": 5,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "Moltke",
+    "ShipsSubsInClass": "SMS Moltke"
+  },
+  {
+    "Id": 180,
+    "SubUnitTypeId": 7,
+    "CountryId": 5,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "Pillau",
+    "ShipsSubsInClass": "SMS Pillau"
+  },
+  {
+    "Id": 181,
+    "SubUnitTypeId": 5,
+    "CountryId": 5,
+    "NumberinClass_shipSub": 1,
+    "Name_ClassName": "Seydlitz",
+    "ShipsSubsInClass": "SMS Seydlitz"
+  },
+  {
+    "Id": 182,
+    "SubUnitTypeId": 5,
+    "CountryId": 5,
+    "NumberinClass_shipSub": 1,
+    "Name_ClassName": "Von der Tann",
+    "ShipsSubsInClass": "SMS Von der Tann"
   }
 ]
