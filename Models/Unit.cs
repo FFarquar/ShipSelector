@@ -38,6 +38,8 @@ namespace ShipSelector.Models
         public int Id { get; set; }
         public string RulesetName { get; set; }
         public bool AllowUnlimitedNumberOfAirCraftSelections { get; set; }      //Nimitz is not limited to selection of planes based on the number in my colleciton
+        public string ImagePreviewWidth { get; set; }
+        public string ImagePreviewHeight { get; set; }
     }
     public class UnitWithGameSystemDetails
     {

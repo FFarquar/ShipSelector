@@ -19,5 +19,6 @@ img {
 }
 
     img:hover {
-        transform: scale(5);
+        top:50px;
+        transform: scale(4);
     }

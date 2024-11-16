@@ -86,7 +86,7 @@
                                             <th># available</th>    
                                             <th>Selected</th>    
                                         }
-                                        <th scope="col">Image</th>
+                                        <th scope="col" width=@ruleSet.ImagePreviewWidth>Image</th>
                                         <th scope="col">Cost</th>
                                         <th scope="col">Add unit</th>
                                     </tr>
@@ -137,7 +137,10 @@
                                             }
 
 
-                                            <img class="img" src=@srcLocationLocal style="border:5px solid #000000; max-width:200px;max-height:200px"  id=@imagename/>
+                                            @*<img class="img" src=@srcLocationLocal style="border:5px solid #000000; max-width:200px;max-height:200px"  id=@imagename/>*@
+                                            @*<img class="img" src=@srcLocationLocal style=@imageStyle id=@imagename/>*@
+                                            @*<img class="img" src=@srcLocationLocal style="width:75%; height:75%" id=@imagename/>*@
+                                            <img class="img" src=@srcLocationLocal style=@imageStyle id=@imagename/>
                                             </td>
 
                                             <td>@unit.Cost</td>
@@ -177,7 +180,8 @@
                                             <th>Name</th>
                                         }
                                 <th scope="col">Cost</th>
-                                        <th scope="col">Image</th>
+                                        @*<th scope="col">Image</th>*@
+                                        <th scope="col" width=@ruleSet.ImagePreviewWidth>Image</th>
                                         <th scope="col">Remove</th>
                                     </tr>
                             </thead>
@@ -221,7 +225,8 @@
                                             @{
                                                 var srcLocationLocal = "ShipImages/" + @RuleSetId + "/" + unit.Countryobj.Id + "/"+ unit.ImagePath;
                                                 }
-                                                <img class="img" src=@srcLocationLocal style="border:5px solid #000000; max-width:200px;max-height:200px"  id=@imagename/>
+                                                @*<img class="img" src=@srcLocationLocal style="border:5px solid #000000; max-width:200px;max-height:200px"  id=@imagename/>*@
+                                                <img class="img" src=@srcLocationLocal style=@imageStyle id=@imagename/>
                                             </td>
                                             <td>
                                                     <fieldset disabled=@unit.RemoveButtonDisabled>
@@ -275,6 +280,7 @@
     private bool CreateListHidden = true;
 
     private List<UnitForGameSystemDTO> CompleteUnitList = new List<UnitForGameSystemDTO>();  //A list of all items that are selectable
+    private string imageStyle;
 
     private async Task ViewFIle(UnitForGameSystemDTO unit, string imageId)
     {
@@ -325,6 +331,13 @@
         var rulesetResponse = await ULSC.GetRuleSet(RuleSetId);
         ruleSet = rulesetResponse.Data;
 
+        //style="border:5px solid #000000; max-width:200px;max-height:200px"
+
+        
+        //imageStyle = "border:5px solid #000000; max-width:" + ruleSet.ImagePreviewWidth + ";max-height:" + ruleSet.ImagePreviewHeight;
+        imageStyle = "border:5px solid #000000; width:75%; height:75%";
+        
+        Console.WriteLine(imageStyle);
 
         //request.RuleSetId = Int16.Parse(RuleSetId);
         //var resultCountries = await ULSC.GetListOfCountries();
