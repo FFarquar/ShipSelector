@@ -2,16 +2,24 @@
   {
     "Id": 1,
     "RulesetName": "Nimitz",
-    "AllowUnlimitedNumberOfAirCraftSelections": true
+    "AllowUnlimitedNumberOfAirCraftSelections": true,
+    "ImagePreviewWidth": "200px",
+    "ImagePreviewHeight": "200px"
+
   },
   {
     "Id": 2,
     "RulesetName": "Axis and Allies War At sea",
-    "AllowUnlimitedNumberOfAirCraftSelections": false
+    "AllowUnlimitedNumberOfAirCraftSelections": false,
+    "ImagePreviewWidth": "150px",
+    "ImagePreviewHeight": "300px"
+
   },
   {
     "Id": 3,
     "RulesetName": "Broadsides - WW1",
-    "AllowUnlimitedNumberOfAirCraftSelections": false
+    "AllowUnlimitedNumberOfAirCraftSelections": false,
+    "ImagePreviewWidth": "300px",
+    "ImagePreviewHeight": "150px"
   }
 ]

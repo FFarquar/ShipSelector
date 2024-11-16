@@ -89,7 +89,8 @@ img[b-8b59dktdwl] {
 }
 
     img:hover[b-8b59dktdwl] {
-        transform: scale(5);
+        top:50px;
+        transform: scale(4);
     }
 /* /Shared/HomeButton.razor.rz.scp.css */
 .home-button[b-y17r5qmw6d] {
