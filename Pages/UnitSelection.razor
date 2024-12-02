@@ -8,6 +8,9 @@
 @inject IJSRuntime JS
 
 
+@*<head>
+    <link href="ShipSelector/UnitSelection.razor.css" rel="stylesheet" />
+</head>*@
 
 <h3>Select units for @ruleSet.RulesetName</h3>
 <EditForm Model="request" OnValidSubmit="getListOfUnits">
@@ -64,8 +67,11 @@
             
             <table hidden=@HideMainForm>
                 
-              <tr>
-                <td class="vertalignCell">
+              @*<tr style="vertical-align:top">*@
+                <tr class="alignrowTop">
+                  
+                @*<td class="vertalignCell">*@
+                <td>
 
                     <p class="lead">
                         Units available for selection
@@ -119,23 +125,17 @@
 
 
                                             @{var imagename = "Image_" + i;}
-                                            @*THIS SECTION OF THE CODE IS USED IF THE images are taken from the Server*@
-
-@*                                            
+                                            @*THIS SECTION OF THE CODE IS USED IF THE images are taken from the Server
                                             @{var srcRef = @ViewFIle(@unit,@imagename);}
-
                                             <td>
-
                                               <img class="img" srcRef style="border:5px solid #000000; max-width:200px;max-height:200px"  id=@imagename/>
-                                            </td>
-*@
+                                            </td>*@
                                             <td>
                                                 
                                               @*THIS SECTION IS USED IF WANT TO READ THE FILES LOCALLY*@
                                             @{
                                                 var srcLocationLocal = "ShipImages/" + @RuleSetId + "/" + unit.Countryobj.Id + "/"+ unit.ImagePath;
                                             }
-
 
                                             @*<img class="img" src=@srcLocationLocal style="border:5px solid #000000; max-width:200px;max-height:200px"  id=@imagename/>*@
                                             @*<img class="img" src=@srcLocationLocal style=@imageStyle id=@imagename/>*@
@@ -158,7 +158,10 @@
                        </table>
 
                 </td>
-                <td class="vertalignCell">
+
+                @*Selected Units*@
+                @*<td class="vertalignCell">*@
+                <td>
 
                     <p class="lead">
                         Selected units. Cost of selected units = @costOfSelectedUnits
@@ -180,7 +183,6 @@
                                             <th>Name</th>
                                         }
                                 <th scope="col">Cost</th>
-                                        @*<th scope="col">Image</th>*@
                                         <th scope="col" width=@ruleSet.ImagePreviewWidth>Image</th>
                                         <th scope="col">Remove</th>
                                     </tr>
@@ -188,7 +190,7 @@
 
                             <tbody>
                                 @foreach (var unit in CompleteUnitList)
-                                @*@foreach (var unit in ULSC.UnitList)*@
+
                                 {
                                     @if(unit.NumberSelected > 0)
                                     {
@@ -210,12 +212,9 @@
 
                                             @{var imagename = "Image_" + i;}
                                             @*THIS SECTION OF THE CODE IS USED IF THE images are taken from the Server*@
-
 @*                                            
                                             @{var srcRef = @ViewFIle(@unit,@imagename);}
-
-                                            <td>
-
+                                           <td>
                                               <img class="img" srcRef style="border:5px solid #000000; max-width:200px;max-height:200px"  id=@imagename/>
                                             </td>
 *@

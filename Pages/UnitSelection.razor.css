@@ -1,6 +1,4 @@
-﻿.vertalignCell {
-    vertical-align: top;
-}
+﻿
 .div-img {
     justify-content: center;
     align-items: center;
@@ -22,3 +20,7 @@ img {
         top:50px;
         transform: scale(4);
     }
+
+.alignrowTop {
+    vertical-align: top;
+}

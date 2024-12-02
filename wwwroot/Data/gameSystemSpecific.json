@@ -1195,5 +1195,26 @@
     "Cost": 135,
     "ImagePath": "VonderTann.jpg",
     "RulesetId": 3
+  },
+  {
+    "Id": 206,
+    "UnitId": 183,
+    "Cost": 93,
+    "ImagePath": "Invincible.jpg",
+    "RulesetId": 3
+  },
+  {
+    "Id": 207,
+    "UnitId": 184,
+    "Cost": 23,
+    "ImagePath": "Otranto.jpg",
+    "RulesetId": 3
+  },
+  {
+    "Id": 208,
+    "UnitId": 185,
+    "Cost": 58,
+    "ImagePath": "Canopus.jpg",
+    "RulesetId": 3
   }
 ]
