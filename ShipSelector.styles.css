@@ -68,9 +68,7 @@ body[b-o81vvg5ayw] {margin: 0}
         }*/[b-o81vvg5ayw]
 }
 /* /Pages/UnitSelection.razor.rz.scp.css */
-.vertalignCell[b-8b59dktdwl] {
-    vertical-align: top;
-}
+
 .div-img[b-8b59dktdwl] {
     justify-content: center;
     align-items: center;
@@ -92,6 +90,10 @@ img[b-8b59dktdwl] {
         top:50px;
         transform: scale(4);
     }
+
+.alignrowTop[b-8b59dktdwl] {
+    vertical-align: top;
+}
 /* /Shared/HomeButton.razor.rz.scp.css */
 .home-button[b-y17r5qmw6d] {
     white-space: nowrap;

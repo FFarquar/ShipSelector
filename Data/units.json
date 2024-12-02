@@ -1350,5 +1350,29 @@
     "NumberinClass_shipSub": 1,
     "Name_ClassName": "Von der Tann",
     "ShipsSubsInClass": "SMS Von der Tann"
+  },
+  {
+    "Id": 183,
+    "SubUnitTypeId": 5,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 3,
+    "Name_ClassName": "Invincible",
+    "ShipsSubsInClass": "HMS Invincible, HMS Inflexible"
+  },
+  {
+    "Id": 184,
+    "SubUnitTypeId": 18,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 2,
+    "Name_ClassName": "Otranto",
+    "ShipsSubsInClass": "HMS Otranto"
+  },
+  {
+    "Id": 185,
+    "SubUnitTypeId": 4,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 6,
+    "Name_ClassName": "Canopus",
+    "ShipsSubsInClass": "HMS Canopus"
   }
 ]
