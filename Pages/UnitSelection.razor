@@ -244,6 +244,10 @@
                                     <i class="oi oi-document"></i>&nbsp;&nbsp;&nbsp;Create list
                                 </button>
 
+                                <button hidden=@CreateListHidden class="btn btn-danger" @onclick="() => CreateSDS()">
+                                    <i class="oi oi-document"></i>&nbsp;&nbsp;&nbsp;Ship Displays
+                                </button>
+
                             </tr>
                        </table>
                 </td>
@@ -313,6 +317,7 @@
 
     }
 
+
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
@@ -332,11 +337,11 @@
 
         //style="border:5px solid #000000; max-width:200px;max-height:200px"
 
-        
+
         //imageStyle = "border:5px solid #000000; max-width:" + ruleSet.ImagePreviewWidth + ";max-height:" + ruleSet.ImagePreviewHeight;
         //imageStyle = "border:5px solid #000000; width:75%; height:75%";
         imageStyle = "border:5px solid #000000; width:75%; height:75%; min-width:200px";
-        
+
         Console.WriteLine(imageStyle);
 
         //request.RuleSetId = Int16.Parse(RuleSetId);
@@ -510,6 +515,16 @@
 
         await JS.InvokeAsync<object>("open", "printpage/"+RuleSetId+"/"+@request.OnlyReturnUnitsInCollection, "_blank");
 
-
     }
+
+    private async void CreateSDS()
+    {
+        //Create a new page so that electronic Ship Displays can be used instead of paper\
+        //Starting with Broadsides 
+        var result = await StorServ.AddUnitsToStorage(CompleteUnitList);
+
+
+        await JS.InvokeAsync<object>("open", "printpage/" + RuleSetId + "/" + @request.OnlyReturnUnitsInCollection, "_blank");
+    }
+
 }

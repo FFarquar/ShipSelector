@@ -1,0 +1,53 @@
+﻿.main_container {
+    /*This is the main layout that has a column of buttons for each ship in the left column
+    and the main layout on the right that has the ship image and holds
+    current damage, current speed, current order, current damage cards
+*/
+    display: flex;
+    height:100%;
+    flex-direction: row;
+    margin: 0px;
+    flex: 100%;
+    background-color:green;
+    }
+
+.left_container {
+    min-width: 150px;
+    background-color: purple;
+    margin:5px;
+    
+    }
+
+.right_container {
+    
+}
+
+.ship_container {
+    position: absolute;
+    display: grid;
+    grid-template-areas:
+        "SDS SDS curr_speed"
+        "SDS SDS curr_damage";
+}
+
+.main_container .right_container .ship_container .SDS {
+    color: pink;
+    width:400px;
+    background-color:orange;
+}
+
+.ship_button {
+    display: block;
+    min-width: 150px;
+    margin:5px;
+}
+
+.main {
+    width:100%;
+    background-color:blue;
+    margin:0px;
+}
+
+.ship_image {
+
+}

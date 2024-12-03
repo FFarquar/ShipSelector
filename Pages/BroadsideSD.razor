@@ -1,0 +1,52 @@
+﻿@page "/broadsideSD"
+@layout NoMenuLayout
+
+
+@* 
+    This site advised how to use the Navigationlock to stop inadvertently navigating away from the page to save data.
+    Had to update VS 2022 and update to .Net 8 and then fix this project (update packages and rebuild). Surprised it actually worked.
+    https://mattjameschampion.com/2023/07/04/controlling-and-preventing-navigation-events-in-blazor-using-navigationlock/
+ *@
+ 
+<NavigationLock ConfirmExternalNavigation="@ConfirmExternalNavigation" OnBeforeInternalNavigation="@OnBeforeInternalNavigation"></NavigationLock> 
+
+@* <label for="confirm-external-navigation-checkbox">Confirm External Navigation</label>
+<input id="confirm-external-navigation-checkbox" type="checkbox" @bind="@ConfirmExternalNavigation">
+ *@
+<main class="main">
+    <h3>Select a Ship</h3>
+    <div class="main_container">
+        <div class="left_container">
+            <button class="ship_button">HMS Warspite</button>
+            <button class="ship_button">HMS Invincible</button>
+            <button class="ship_button">HMS Monmoth</button>
+        </div>
+
+        <div class="right_container">
+
+            <div class="ship_container">
+                <div class="SDS">
+                    <img class="ship_image" src="ShipImages/3/5/Pillau.jpg"/>
+                    <input s/>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</main>
+
+@code {
+    [Inject] IJSRuntime? JsRuntime { get; set; }
+
+    private bool ConfirmExternalNavigation { get; set; } = true;
+
+    private async Task OnBeforeInternalNavigation(LocationChangingContext locationChangingContext)
+    {
+        if (JsRuntime is null) return;
+        // var continueNavigationEvent = await JsRuntime.InvokeAsync<bool>("confirm", $"{nameof(OnBeforeInternalNavigation)} you will loose any data enetered! Do you want to stuff it up?");
+        var continueNavigationEvent = await JsRuntime.InvokeAsync<bool>("confirm", $"You will loose any data enetered if you navigate away! Do you want to stuff it up?");
+        if (!continueNavigationEvent) locationChangingContext.PreventNavigation();
+    }
+
+}
