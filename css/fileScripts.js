@@ -38,3 +38,7 @@ window.setImageUsingStreaming = async (imageElementId, imageStream) => {
 window.test = async (test) => {
     console.log("In test")
 }
+
+window.onbeforeunload = function () {
+    return 'Are you sure you want to leave?';
+};

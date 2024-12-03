@@ -1,3 +1,57 @@
+/* /Pages/BroadsideSD.razor.rz.scp.css */
+.main_container[b-pd0jsyqxkm] {
+    /*This is the main layout that has a column of buttons for each ship in the left column
+    and the main layout on the right that has the ship image and holds
+    current damage, current speed, current order, current damage cards
+*/
+    display: flex;
+    height:100%;
+    flex-direction: row;
+    margin: 0px;
+    flex: 100%;
+    background-color:green;
+    }
+
+.left_container[b-pd0jsyqxkm] {
+    min-width: 150px;
+    background-color: purple;
+    margin:5px;
+    
+    }
+
+.right_container[b-pd0jsyqxkm] {
+    
+}
+
+.ship_container[b-pd0jsyqxkm] {
+    position: absolute;
+    display: grid;
+    grid-template-areas:
+        "SDS SDS curr_speed"
+        "SDS SDS curr_damage";
+}
+
+.main_container .right_container .ship_container .SDS[b-pd0jsyqxkm] {
+    color: pink;
+    width:400px;
+    background-color:orange;
+}
+
+.ship_button[b-pd0jsyqxkm] {
+    display: block;
+    min-width: 150px;
+    margin:5px;
+}
+
+.main[b-pd0jsyqxkm] {
+    width:100%;
+    background-color:blue;
+    margin:0px;
+}
+
+.ship_image[b-pd0jsyqxkm] {
+
+}
 /* /Pages/PrintPage.razor.rz.scp.css */
 /*all this styling came from https://medium.com/@karthikricssion/how-to-design-a-printable-html-page-layout-802bc9ea61dd*/
 
