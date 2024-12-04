@@ -16,20 +16,46 @@
 <main class="main">
     <h3>Select a Ship</h3>
     <div class="main_container">
-        <div class="left_container">
+        <div class="ship_list_nav_bar_left_container">
             <button class="ship_button">HMS Warspite</button>
             <button class="ship_button">HMS Invincible</button>
             <button class="ship_button">HMS Monmoth</button>
         </div>
 
-        <div class="right_container">
+        <div class="ship_sds_status_right_container">
 
-            <div class="ship_container">
-                <div class="SDS">
+                <div class="SDS">   
+                    @* Contains only the ship image *@
                     <img class="ship_image" src="ShipImages/3/5/Pillau.jpg"/>
-                    <input/>
+                </div>        
+                <div class="ship_current_stats">
+                    @* Contains editiable fields for the ship *@
+                    <label for="current_speed">Current Speed</label>
+                    <input id="current_speed" type="number" />
+
+                    <label for="hull_hits">Hull Hits</label>
+                    <input id="hull_hits" type="number" />
+
+                    <label for="hull_hits">Flooding hits</label>
+                    <input id="hull_hits" type="number" />
+                    <div class="ship_order">
+                        <label>Ship order</label>
+                        <select Name="Name_of_list_box">
+                            <option value="more_speed">More Speed</option>
+                            <option value="gunnery">Gunnery</option>
+                            <option value="torp_run">Torpedo Run</option>
+                            <option value="damage_control">Damage Control</option>
+                        </select>
+                        <div>
+                            <img src="BroadsidesCards/Orders/torp_run_beta.jpg"/>
+                        </div>
+                        <div>
+                            <label for="order_active">Order is active</label>
+                            <input id="order_active" type="checkbox" />
+                        </div>
                 </div>
-            </div>
+                </div>
+        
         </div>
 
 
@@ -44,7 +70,6 @@
     private async Task OnBeforeInternalNavigation(LocationChangingContext locationChangingContext)
     {
         if (JsRuntime is null) return;
-        // var continueNavigationEvent = await JsRuntime.InvokeAsync<bool>("confirm", $"{nameof(OnBeforeInternalNavigation)} you will loose any data enetered! Do you want to stuff it up?");
         var continueNavigationEvent = await JsRuntime.InvokeAsync<bool>("confirm", $"You will loose any data enetered if you navigate away! Do you want to stuff it up?");
         if (!continueNavigationEvent) locationChangingContext.PreventNavigation();
     }
