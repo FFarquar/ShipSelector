@@ -23,21 +23,30 @@
         </div>
 
         <div class="ship_sds_status_right_container">
-
-                <div class="SDS">   
+            <div class="SDS_and_Stats">
+                <div class="SDS">
                     @* Contains only the ship image *@
-                    <img class="ship_image" src="ShipImages/3/5/Pillau.jpg"/>
-                </div>        
-                <div class="ship_current_stats">
+                    <img class="ship_image" src="ShipImages/3/5/Pillau.jpg" />
+                </div>
+                <div class="ship_current_stats_and_order">
                     @* Contains editiable fields for the ship *@
-                    <label for="current_speed">Current Speed</label>
-                    <input id="current_speed" type="number" />
+                    <div class="ship_stats">
+                        <div>
+                            <label for="current_speed">Current Speed</label>
+                            <input class="stat_input" id="current_speed" type="number" />
 
-                    <label for="hull_hits">Hull Hits</label>
-                    <input id="hull_hits" type="number" />
+                        </div>
 
-                    <label for="hull_hits">Flooding hits</label>
-                    <input id="hull_hits" type="number" />
+                        <div>
+                            <label for="hull_hits">Hull Hits</label>
+                            <input class="stat_input" id="hull_hits" type="number" />
+                        </div>
+                        <div>
+                            <label for="hull_hits">Flooding hits</label>
+                            <input class="stat_input" id="hull_hits" type="number" />
+                        </div>
+
+                    </div>
                     <div class="ship_order">
                         <label>Ship order</label>
                         <select Name="Name_of_list_box">
@@ -47,15 +56,28 @@
                             <option value="damage_control">Damage Control</option>
                         </select>
                         <div>
-                            <img src="BroadsidesCards/Orders/torp_run_beta.jpg"/>
+                            <img src="BroadsidesCards/Orders/torp_run_beta.jpg" />
                         </div>
                         <div>
                             <label for="order_active">Order is active</label>
                             <input id="order_active" type="checkbox" />
                         </div>
+                    </div>
                 </div>
+            </div>
+            <div class="damage_cards">
+                <label>Damage Cards</label>
+
+                <div>
+                    <button>Add damage card</button>
                 </div>
-        
+                <div>
+                    <img class="damage_card" src="BroadsidesCards/Damage/damage_test.jpg" />
+                    <img class="damage_card" src="BroadsidesCards/Damage/damage_test.jpg" />
+                </div>
+                
+
+            </div>
         </div>
 
 

@@ -24,7 +24,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\BroadsidesCards\Damage\" />
     <Folder Include="wwwroot\BroadsidesCards\Orders\" />
     <Folder Include="wwwroot\ShipImages\1\2\" />
     <Folder Include="wwwroot\ShipImages\2\2\" />
