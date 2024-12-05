@@ -5,12 +5,12 @@
     current damage, current speed, current order, current damage cards
 */
     display: flex;
-    height:100%;
+    height: 100%;
     flex-direction: row;
     margin: 0px;
     flex: 100%;
-/*    background-color:green;*/
-    }
+    /*    background-color:green;*/
+}
 
 .ship_list_nav_bar_left_container[b-pd0jsyqxkm] {
     min-width: 150px;
@@ -47,39 +47,54 @@
 }
 
 .main[b-pd0jsyqxkm] {
-    width:100%;
-/*    background-color:blue;*/
-    margin:0px;
+    width: 100%;
+    /*    background-color:blue;*/
+    margin: 0px;
 }
 
 .ship_image[b-pd0jsyqxkm] {
-
 }
 
 .ship_current_stats_and_order[b-pd0jsyqxkm] {
     display: flex;
     flex-direction: column;
     min-width: 150px;
-    max-width:200px;
+    max-width: 200px;
     /*    background-color: black;*/
 }
 
 .ship_stats[b-pd0jsyqxkm] {
-
 }
+
 .ship_order[b-pd0jsyqxkm] {
     margin-top: 5px;
     border-style: solid;
+    background-color: red;
+    /*    max-width:200px;*/
+    display: flex;
+    flex-direction: column;
 }
 
-.damage_cards[b-pd0jsyqxkm]{
-    margin-top:5px;
-    border:solid;
+
+.ship_order_card_container[b-pd0jsyqxkm] {
+}
+
+.ship_order_card[b-pd0jsyqxkm] {
+    max-width: 100%;
+    max-height: 100%;
+    /*    margin: auto;
+    display: block;*/
+}
+
+*/
+.damage_cards[b-pd0jsyqxkm] {
+    margin-top: 5px;
+    border: solid;
 }
 
 .damage_card[b-pd0jsyqxkm] {
-    width:80px;
-    height:135px;
+    width: 80px;
+    height: 135px;
 }
 
 .SDS_and_Stats[b-pd0jsyqxkm] {
@@ -89,10 +104,10 @@
     background-color: pink;
 }
 
-.stat_input[b-pd0jsyqxkm]{
-    max-width:50px;
-    float:right;
-    height:20px;
+.stat_input[b-pd0jsyqxkm] {
+    max-width: 50px;
+    float: right;
+    height: 20px;
 }
 
 @media only screen and (max-width: 1130px) {
@@ -106,9 +121,140 @@
 
     .ship_order[b-pd0jsyqxkm] {
         margin-top: 0px;
+        min-width:200px;
     }
 
     .ship_stats[b-pd0jsyqxkm] {
+        min-width: 180px;
+        margin-right: 30px;
+    }
+}
+/* /Pages/BroadsideSD_Mockup.razor.rz.scp.css */
+.main_container[b-fho3pyxoxc] {
+    /*This is the main layout that has a column of buttons for each ship in the left column
+    and the main layout on the right that has the ship image and holds
+    current damage, current speed, current order, current damage cards
+*/
+    display: flex;
+    height:100%;
+    flex-direction: row;
+    margin: 0px;
+    flex: 100%;
+/*    background-color:green;*/
+    }
+
+.ship_list_nav_bar_left_container[b-fho3pyxoxc] {
+    min-width: 150px;
+    background-color: purple;
+    margin: 5px;
+}
+
+.ship_sds_status_right_container[b-fho3pyxoxc] {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/*.ship_container {
+    position: absolute;
+    display: grid;
+    grid-template-areas:
+        "SDS SDS curr_speed"
+        "SDS SDS curr_damage";
+}*/
+
+/*.main_container .ship_sds_status_right_container .SDS {
+    color: pink;
+    min-width:400px;
+    background-color: orange;
+}*/
+
+
+.ship_button[b-fho3pyxoxc] {
+    display: block;
+    min-width: 150px;
+    margin: 5px;
+}
+
+.main[b-fho3pyxoxc] {
+    width:100%;
+/*    background-color:blue;*/
+    margin:0px;
+}
+
+.ship_image[b-fho3pyxoxc] {
+
+}
+
+.ship_current_stats_and_order[b-fho3pyxoxc] {
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+    max-width:200px;
+    /*    background-color: black;*/
+}
+
+.ship_stats[b-fho3pyxoxc] {
+
+}
+
+.ship_order[b-fho3pyxoxc] {
+    margin-top: 5px;
+    border-style: solid;
+    background-color:red;
+/*    max-width:200px;*/
+    display:flex;
+    flex-direction:column;
+}
+
+
+.ship_order_card_container[b-fho3pyxoxc] {
+    
+}
+.ship_order_card[b-fho3pyxoxc] {
+    max-width: 100%;
+    max-height: 100%;
+/*    margin: auto;
+    display: block;*/
+}*/
+.damage_cards[b-fho3pyxoxc] {
+    margin-top: 5px;
+    border: solid;
+}
+
+.damage_card[b-fho3pyxoxc] {
+    width:80px;
+    height:135px;
+}
+
+.SDS_and_Stats[b-fho3pyxoxc] {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: pink;
+}
+
+.stat_input[b-fho3pyxoxc]{
+    max-width:50px;
+    float:right;
+    height:20px;
+}
+
+@media only screen and (max-width: 1130px) {
+    .main[b-fho3pyxoxc] {
+        background-color: lightblue;
+    }
+
+    .ship_current_stats_and_order[b-fho3pyxoxc] {
+        flex-direction: row;
+    }
+
+    .ship_order[b-fho3pyxoxc] {
+        margin-top: 0px;
+    }
+
+    .ship_stats[b-fho3pyxoxc] {
         min-width:180px;
         margin-right:30px;
     }
