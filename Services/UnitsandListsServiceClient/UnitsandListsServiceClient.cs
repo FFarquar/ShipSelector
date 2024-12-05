@@ -559,6 +559,30 @@ namespace ShipSelector.Services.UnitsandListsServiceClient
         }
 
 
+        public async Task<ServiceResponse<List<OrderCard>>> GetBroadSideOrderCards()
+        {
+            var result = await _http.GetFromJsonAsync<OrderCard[]>("Data/broadsides_order_cards.json");
+
+            if (result != null && result.Length != 0)
+            {
+
+                return new ServiceResponse<List<OrderCard>>
+                {
+                    Data = result.ToList()
+                };
+            }
+            else
+            {
+                return new ServiceResponse<List<OrderCard>>
+                {
+                    Data = new List<OrderCard>(),
+                    Success = false,
+                    Message = "No orders found"
+                };
+
+            }
+
+        }
     }
 
     class ColorConverter : JsonConverter

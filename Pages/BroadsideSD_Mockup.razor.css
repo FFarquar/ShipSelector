@@ -4,12 +4,12 @@
     current damage, current speed, current order, current damage cards
 */
     display: flex;
-    height: 100%;
+    height:100%;
     flex-direction: row;
     margin: 0px;
     flex: 100%;
-    /*    background-color:green;*/
-}
+/*    background-color:green;*/
+    }
 
 .ship_list_nav_bar_left_container {
     min-width: 150px;
@@ -46,54 +46,54 @@
 }
 
 .main {
-    width: 100%;
-    /*    background-color:blue;*/
-    margin: 0px;
+    width:100%;
+/*    background-color:blue;*/
+    margin:0px;
 }
 
 .ship_image {
+
 }
 
 .ship_current_stats_and_order {
     display: flex;
     flex-direction: column;
     min-width: 150px;
-    max-width: 200px;
+    max-width:200px;
     /*    background-color: black;*/
 }
 
 .ship_stats {
+
 }
 
 .ship_order {
     margin-top: 5px;
     border-style: solid;
-    background-color: red;
-    /*    max-width:200px;*/
-    display: flex;
-    flex-direction: column;
+    background-color:red;
+/*    max-width:200px;*/
+    display:flex;
+    flex-direction:column;
 }
 
 
 .ship_order_card_container {
+    
 }
-
 .ship_order_card {
     max-width: 100%;
     max-height: 100%;
-    /*    margin: auto;
+/*    margin: auto;
     display: block;*/
-}
-
-*/
+}*/
 .damage_cards {
     margin-top: 5px;
     border: solid;
 }
 
 .damage_card {
-    width: 80px;
-    height: 135px;
+    width:80px;
+    height:135px;
 }
 
 .SDS_and_Stats {
@@ -103,10 +103,10 @@
     background-color: pink;
 }
 
-.stat_input {
-    max-width: 50px;
-    float: right;
-    height: 20px;
+.stat_input{
+    max-width:50px;
+    float:right;
+    height:20px;
 }
 
 @media only screen and (max-width: 1130px) {
@@ -120,11 +120,10 @@
 
     .ship_order {
         margin-top: 0px;
-        min-width:200px;
     }
 
     .ship_stats {
-        min-width: 180px;
-        margin-right: 30px;
+        min-width:180px;
+        margin-right:30px;
     }
 }

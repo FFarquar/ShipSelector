@@ -1,0 +1,99 @@
+﻿@page "/broadsideSD_Mockup"
+@layout NoMenuLayout
+
+
+@* 
+    This site advised how to use the Navigationlock to stop inadvertently navigating away from the page to save data.
+    Had to update VS 2022 and update to .Net 8 and then fix this project (update packages and rebuild). Surprised it actually worked.
+    https://mattjameschampion.com/2023/07/04/controlling-and-preventing-navigation-events-in-blazor-using-navigationlock/
+ *@
+ 
+<NavigationLock ConfirmExternalNavigation="@ConfirmExternalNavigation" OnBeforeInternalNavigation="@OnBeforeInternalNavigation"></NavigationLock> 
+
+@* <label for="confirm-external-navigation-checkbox">Confirm External Navigation</label>
+<input id="confirm-external-navigation-checkbox" type="checkbox" @bind="@ConfirmExternalNavigation">
+ *@
+<main class="main">
+    <h3>Select a Ship</h3>
+    <div class="main_container">
+        <div class="ship_list_nav_bar_left_container">
+            <button class="ship_button">HMS Warspite</button>
+            <button class="ship_button">HMS Invincible</button>
+            <button class="ship_button">HMS Monmoth</button>
+        </div>
+
+        <div class="ship_sds_status_right_container">
+            <div class="SDS_and_Stats">
+                <div class="SDS">
+                    @* Contains only the ship image *@
+                    <img class="ship_image" src="ShipImages/3/5/Pillau.jpg" />
+                </div>
+                <div class="ship_current_stats_and_order">
+                    @* Contains editiable fields for the ship *@
+                    <div class="ship_stats">
+                        <div>
+                            <label for="current_speed">Current Speed</label>
+                            <input class="stat_input" id="current_speed" type="number" />
+
+                        </div>
+
+                        <div>
+                            <label for="hull_hits">Hull Hits</label>
+                            <input class="stat_input" id="hull_hits" type="number" />
+                        </div>
+                        <div>
+                            <label for="hull_hits">Flooding hits</label>
+                            <input class="stat_input" id="hull_hits" type="number" />
+                        </div>
+
+                    </div>
+                    <div class="ship_order">
+                        <label>Ship order</label>
+                        <select Name="Name_of_list_box">
+                            <option value="more_speed">More Speed</option>
+                            <option value="gunnery">Gunnery</option>
+                            <option value="torp_run">Torpedo Run</option>
+                            <option value="damage_control">Damage Control</option>
+                        </select>
+                        <div class="ship_order_card_container">
+                            <img class="ship_order_card" src="BroadsidesCards/Orders/more_speed.jpg" />
+                        </div>
+                        <div>
+                            <label for="order_active">Order is active</label>
+                            <input id="order_active" type="checkbox" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="damage_cards">
+                <label>Damage Cards</label>
+
+                <div>
+                    <button>Add damage card</button>
+                </div>
+                <div>
+                    <img class="damage_card" src="BroadsidesCards/Damage/damage_test.jpg" />
+                    <img class="damage_card" src="BroadsidesCards/Damage/damage_test.jpg" />
+                </div>
+                
+
+            </div>
+        </div>
+
+
+    </div>
+</main>
+
+@code {
+    [Inject] IJSRuntime? JsRuntime { get; set; }
+
+    private bool ConfirmExternalNavigation { get; set; } = true;
+
+    private async Task OnBeforeInternalNavigation(LocationChangingContext locationChangingContext)
+    {
+        if (JsRuntime is null) return;
+        var continueNavigationEvent = await JsRuntime.InvokeAsync<bool>("confirm", $"You will loose any data enetered if you navigate away! Do you want to stuff it up?");
+        if (!continueNavigationEvent) locationChangingContext.PreventNavigation();
+    }
+
+}

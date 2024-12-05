@@ -522,9 +522,10 @@
         //Create a new page so that electronic Ship Displays can be used instead of paper\
         //Starting with Broadsides 
         var result = await StorServ.AddUnitsToStorage(CompleteUnitList);
+        
+        //todo Need to make this available only if broadsides is being used
 
-
-        await JS.InvokeAsync<object>("open", "printpage/" + RuleSetId + "/" + @request.OnlyReturnUnitsInCollection, "_blank");
+        await JS.InvokeAsync<object>("open", "broadsideSD" , "_blank");
     }
 
 }
