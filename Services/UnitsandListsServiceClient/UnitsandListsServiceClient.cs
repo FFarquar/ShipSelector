@@ -577,11 +577,32 @@ namespace ShipSelector.Services.UnitsandListsServiceClient
                 {
                     Data = new List<OrderCard>(),
                     Success = false,
-                    Message = "No orders found"
+                    Message = "No order cards found"
                 };
-
             }
+        }
 
+        public async Task<ServiceResponse<List<DamageCard>>> GetBroadSideDamageCards()
+        {
+            var result = await _http.GetFromJsonAsync<DamageCard[]>("Data/broadsides_damage_cards.json");
+
+            if (result != null && result.Length != 0)
+            {
+
+                return new ServiceResponse<List<DamageCard>>
+                {
+                    Data = result.ToList()
+                };
+            }
+            else
+            {
+                return new ServiceResponse<List<DamageCard>>
+                {
+                    Data = new List<DamageCard>(),
+                    Success = false,
+                    Message = "No damage cards found"
+                };
+            }
         }
     }
 

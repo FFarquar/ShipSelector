@@ -1,0 +1,103 @@
+[
+  {
+    "Id": 0,
+    "Name": "Nothing",
+    "ImagePath": "BroadsidesCards/Damage/damage_face_card.jpg",
+    "number_cards": "0"
+  },
+  {
+    "Id": 1,
+    "Name": "Order Telegraph Damaged",
+    "ImagePath": "BroadsidesCards/Damage/order_telegraph_damaged.jpg",
+    "number_cards": "1"
+  },
+  {
+    "Id": 2,
+    "Name": "Shipboard Fre",
+    "ImagePath": "BroadsidesCards/Damage/shipboard_fire.jpg",
+    "number_cards": "5"
+  },
+  {
+    "Id": 3,
+    "Name": "Gun Silenced",
+    "ImagePath": "BroadsidesCards/Damage/gun_silenced.jpg",
+    "number_cards": "2"
+  },
+  {
+    "Id": 4,
+    "Name": "Fire Direction Centre Hit",
+    "ImagePath": "BroadsidesCards/Damage/fire_direction_centre_hit.jpg",
+    "number_cards": "1"
+  },
+  {
+    "Id": 5,
+    "Name": "Fire Direction Centre Destroyed",
+    "ImagePath": "BroadsidesCards/Damage/fire_direction_centre_destroyed.jpg",
+    "number_cards": "1"
+  },
+  {
+    "Id": 6,
+    "Name": "Engine Damage",
+    "ImagePath": "BroadsidesCards/Damage/engine_damage.jpg",
+    "number_cards": "1"
+
+  },
+  {
+    "Id": 7,
+    "Name": "Holed Below The Waterline",
+    "ImagePath": "BroadsidesCards/Damage/holed_below_the_waterline.jpg",
+    "number_cards": "4"
+
+  },
+  {
+    "Id": 8,
+    "Name": "Propulsion Damage",
+    "ImagePath": "BroadsidesCards/Damage/propulsion_damage.jpg",
+    "number_cards": "2"
+
+  },
+  {
+    "Id": 9,
+    "Name": "Bridge Hit",
+    "ImagePath": "BroadsidesCards/Damage/bridge_hit.jpg",
+    "number_cards": "2"
+
+  },
+  {
+    "Id": 10,
+    "Name": "Clear the Decks",
+    "ImagePath": "BroadsidesCards/Damage/clear_the_decks.jpg",
+    "number_cards": "2"
+  },
+  {
+    "Id": 11,
+    "Name": "Main Turret Silenced",
+    "ImagePath": "BroadsidesCards/Damage/main_turret_silenced.jpg",
+    "number_cards": "2"
+  },
+  {
+    "Id": 12,
+    "Name": "Steering Damaged",
+    "ImagePath": "BroadsidesCards/Damage/steering_damaged.jpg",
+    "number_cards": "1"
+  },
+  {
+    "Id": 13,
+    "Name": "Steering Jammed",
+    "ImagePath": "BroadsidesCards/Damage/steering_jammed.jpg",
+    "number_cards": "1"
+  },
+  {
+    "Id": 14,
+    "Name": "Rudder Assembly Damaged",
+    "ImagePath": "BroadsidesCards/Damage/rudder_assembly_damaged.jpg",
+    "number_cards": "1"
+  },
+  {
+    "Id": 15,
+    "Name": "Engine Damage",
+    "ImagePath": "BroadsidesCards/Damage/engine_damage.jpg",
+    "number_cards": "1"
+  }
+
+]

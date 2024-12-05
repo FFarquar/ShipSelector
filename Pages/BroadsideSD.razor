@@ -61,7 +61,7 @@
                     <div class="ship_order">
                         <label>Ship order</label>
                         @* <select @bind=selectedShip.selectedOrderCard  Name="Name_of_list_box" @onclick="() => ChangeOrderImage()"> *@
-                            <select @bind=selectedShip.selectedOrderCard Name="Name_of_list_box" @bind:after="() => ChangeOrderImage()">
+                        <select @bind=selectedShip.selectedOrderCard Name="Name_of_list_box" @bind:after="() => ChangeOrderImage()">
 
                             @for (int i = 0; i < @OrderCardList.Count; i++)
                             {
@@ -110,6 +110,7 @@
 
 
     private List<OrderCard> OrderCardList = new List<OrderCard>();  //a list of order cards
+    private List<DamageCard> DamageCardList = new List<DamageCard>();  //a list of all damage cards
 
     private async Task OnBeforeInternalNavigation(LocationChangingContext locationChangingContext)
     {
@@ -122,8 +123,9 @@
     protected override async Task OnInitializedAsync()
     {
 
-
         await BuildListOfOrderCards();
+        await BuildListOfDamageCards();
+
         base.OnInitialized();
         var SelectedUnitsResponse = await StorServ.RetrieveAllUnits();
 
@@ -132,15 +134,26 @@
 
     }
 
-    // protected override Task OnAfterRenderAsync(bool firstRender)
-    // {
-    //     if (firstRender)
-    //     {
-    //         do something
-    //         StateHasChanged();
-    //     }
-    //     return Task.CompletedTask;
-    // }
+    private async Task BuildListOfDamageCards()
+    {
+        var broadsideCards = await ULSC.GetBroadSideDamageCards();
+
+        int totalNumberOfCardsInDeck = 0;
+        DamageCardList = new List<DamageCard>();
+        foreach (var item in broadsideCards.Data)
+        {
+            DamageCard dc = new DamageCard();
+
+            dc.Name = item.Name;
+            dc.ImagePath = item.ImagePath;
+            dc.number_cards = item.number_cards;
+            dc.id = item.id;
+            totalNumberOfCardsInDeck = totalNumberOfCardsInDeck + dc.number_cards;
+            DamageCardList.Add(dc);
+        }
+
+        Console.WriteLine("Total num damage cards = " + totalNumberOfCardsInDeck);
+    }
 
     private async Task BuildListOfOrderCards()
     {

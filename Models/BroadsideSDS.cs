@@ -19,9 +19,10 @@ namespace ShipSelector.Models
     public class DamageCard
     {
         //can have multiple cards
-        public string NameOfCard { get; set; }
-        public string PathToCard { get; set; }
+        public string Name { get; set; }
+        public string ImagePath { get; set; }
         public int id { get; set; }
+        public int number_cards { get; set; }
 
     }
 
