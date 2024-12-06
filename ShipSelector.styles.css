@@ -86,15 +86,12 @@
     display: block;*/
 }
 
-*/
+
 .damage_cards[b-pd0jsyqxkm] {
     margin-top: 5px;
     border: solid;
-}
-
-.damage_card[b-pd0jsyqxkm] {
-    width: 80px;
-    height: 135px;
+    max-width: 100%;
+    background-color: aqua;
 }
 
 .SDS_and_Stats[b-pd0jsyqxkm] {
@@ -108,6 +105,19 @@
     max-width: 50px;
     float: right;
     height: 20px;
+}
+
+.damage_cards_container[b-pd0jsyqxkm] {
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.damage_card_and_delete[b-pd0jsyqxkm] {
+    flex-direction: column;
+}
+
+.damage_card[b-pd0jsyqxkm] {
+    width: 140px;
 }
 
 @media only screen and (max-width: 1130px) {
@@ -223,10 +233,6 @@
     border: solid;
 }
 
-.damage_card[b-fho3pyxoxc] {
-    width:80px;
-    height:135px;
-}
 
 .SDS_and_Stats[b-fho3pyxoxc] {
     display: flex;
@@ -239,6 +245,18 @@
     max-width:50px;
     float:right;
     height:20px;
+}
+
+.damage_cards_container[b-fho3pyxoxc] {
+    display:flex;
+}
+
+.damage_card_and_delete[b-fho3pyxoxc]{
+    flex-direction:column;
+}
+
+.damage_card[b-fho3pyxoxc] {
+    width: 120px;
 }
 
 @media only screen and (max-width: 1130px) {
@@ -650,4 +668,20 @@ main[b-2645jomg7u] {
         /* Never collapse the sidebar for wide screens */
         display: block;
     }
+}
+/* /Shared/PopContainer.razor.rz.scp.css */
+.pop-container[b-dden5bwmy0] {
+    position: relative;
+}
+
+.popconfirm[b-dden5bwmy0] {
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightblue;
+    width: 250px;
+    position: absolute;
+    top: -50px;
+    padding: 10px;
+    border-radius: 8px;
 }

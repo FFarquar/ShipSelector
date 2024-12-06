@@ -92,12 +92,6 @@
     "Name": "Rudder Assembly Damaged",
     "ImagePath": "BroadsidesCards/Damage/rudder_assembly_damaged.jpg",
     "number_cards": "1"
-  },
-  {
-    "Id": 15,
-    "Name": "Engine Damage",
-    "ImagePath": "BroadsidesCards/Damage/engine_damage.jpg",
-    "number_cards": "1"
   }
 
 ]

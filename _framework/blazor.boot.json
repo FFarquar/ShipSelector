@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "ShipSelector",
   "resources": {
-    "hash": "sha256-gWpCMhiVd366Pz9s/xk0OcEwYEPd7JDmx6xKHZFqwu0=",
+    "hash": "sha256-LSVHPV+vAd+xn+YM5xgwGziwSSwc9zX16w3+wGhan3I=",
     "jsModuleNative": {
       "dotnet.native.8.0.11.n1sf6xr5tz.js": "sha256-VdKq87/z5NIxZKmuM+fv38XF+RcEb/bg3jVBwQSfwP4="
     },
@@ -39,7 +39,7 @@
       "Microsoft.JSInterop.wasm": "sha256-814gYMpYAYmWK/d9rslaxsL9hnftkFOuFY6VnHrQS6o=",
       "Microsoft.JSInterop.WebAssembly.wasm": "sha256-RzJ9fPep8Ag+Q81dcnXeVpV4NvuzaPi9R6xARtJPoDg=",
       "Newtonsoft.Json.wasm": "sha256-GlXMWKvDs45M2pACoR3Y4Qh8mcrOZGljqmvJY+6JZ5s=",
-      "ShipSelector.wasm": "sha256-s2KkN1zTGKYBPe9+8jhyxmsmXeYt47FXllhwmevoDbQ=",
+      "ShipSelector.wasm": "sha256-3UBfJpPcn2Bn0u39QuOgSgn1Xb3x7p5kU+G6qnFsNNo=",
       "System.Collections.Concurrent.wasm": "sha256-6Cf9CXyijxFZi2/f0y1C/LX+JnTzW7CQcip5YzFn+a8=",
       "System.Collections.Immutable.wasm": "sha256-Jq4VD/67nqAzXElVEP79ai99NZEKueOBQN+ZZ5WOKiA=",
       "System.Collections.NonGeneric.wasm": "sha256-unBIEePe3ca+iZ0NJkHsoOxvt8QtMthviFzKe2Fyh5U=",
