@@ -91,10 +91,6 @@
     border: solid;
 }
 
-.damage_card {
-    width:80px;
-    height:135px;
-}
 
 .SDS_and_Stats {
     display: flex;
@@ -107,6 +103,18 @@
     max-width:50px;
     float:right;
     height:20px;
+}
+
+.damage_cards_container {
+    display:flex;
+}
+
+.damage_card_and_delete{
+    flex-direction:column;
+}
+
+.damage_card {
+    width: 120px;
 }
 
 @media only screen and (max-width: 1130px) {

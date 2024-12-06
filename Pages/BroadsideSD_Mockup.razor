@@ -66,14 +66,23 @@
                 </div>
             </div>
             <div class="damage_cards">
-                <label>Damage Cards</label>
+                <h4>Damage Cards</h4>
 
                 <div>
                     <button>Add damage card</button>
                 </div>
-                <div>
-                    <img class="damage_card" src="BroadsidesCards/Damage/damage_test.jpg" />
-                    <img class="damage_card" src="BroadsidesCards/Damage/damage_test.jpg" />
+
+                <div class="damage_cards_container">
+                    @* <img class="damage_card" src="BroadsidesCards/Damage/damage_test.jpg" /> *@
+@*                     <img class="damage_card" src="BroadsidesCards/Damage/damage_test.jpg" /> *@
+                      <div class="damage_card_and_delete">
+                        <img id="1" class="damage_card" src="BroadsidesCards/Damage/engine_damage.jpg" />
+                        <PopContainer idOfelement="1" ConfirmedChanged2="RemoveDamageCard" />
+                    </div>
+                    <div class="damage_card_and_delete">
+                        <img id="2" class="damage_card" src="BroadsidesCards/Damage/engine_damage.jpg" />
+                        <PopContainer idOfelement="1" ConfirmedChanged2="RemoveDamageCard" />
+                    </div>
                 </div>
                 
 
@@ -88,12 +97,33 @@
     [Inject] IJSRuntime? JsRuntime { get; set; }
 
     private bool ConfirmExternalNavigation { get; set; } = true;
-
+    private BroadsideSDS selectedShip { get; set; } = new BroadsideSDS();
     private async Task OnBeforeInternalNavigation(LocationChangingContext locationChangingContext)
     {
         if (JsRuntime is null) return;
         var continueNavigationEvent = await JsRuntime.InvokeAsync<bool>("confirm", $"You will loose any data enetered if you navigate away! Do you want to stuff it up?");
         if (!continueNavigationEvent) locationChangingContext.PreventNavigation();
+    }
+
+    private async Task RemoveDamageCard(int response)
+    {
+
+        if (response != 0)
+        {
+            Console.WriteLine("Remove card number = " + response);
+
+            DamageCard dcToDelete = new DamageCard();
+            foreach (var item in selectedShip.DamageCards)
+            {
+                if (item.id == response)
+                {
+                    dcToDelete = item;
+                }
+            }
+
+            selectedShip.DamageCards.Remove(dcToDelete);
+            ///have to delete the card from the collection. Get the id somehow
+        }
     }
 
 }

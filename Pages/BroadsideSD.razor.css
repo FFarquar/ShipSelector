@@ -85,15 +85,12 @@
     display: block;*/
 }
 
-*/
+
 .damage_cards {
     margin-top: 5px;
     border: solid;
-}
-
-.damage_card {
-    width: 80px;
-    height: 135px;
+    max-width: 100%;
+    background-color: aqua;
 }
 
 .SDS_and_Stats {
@@ -107,6 +104,19 @@
     max-width: 50px;
     float: right;
     height: 20px;
+}
+
+.damage_cards_container {
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.damage_card_and_delete {
+    flex-direction: column;
+}
+
+.damage_card {
+    width: 140px;
 }
 
 @media only screen and (max-width: 1130px) {

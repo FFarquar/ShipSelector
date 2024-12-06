@@ -582,23 +582,23 @@ namespace ShipSelector.Services.UnitsandListsServiceClient
             }
         }
 
-        public async Task<ServiceResponse<List<DamageCard>>> GetBroadSideDamageCards()
+        public async Task<ServiceResponse<List<DamageCardData>>> GetBroadSideDamageCards()
         {
-            var result = await _http.GetFromJsonAsync<DamageCard[]>("Data/broadsides_damage_cards.json");
+            var result = await _http.GetFromJsonAsync<DamageCardData[]>("Data/broadsides_damage_cards.json");
 
             if (result != null && result.Length != 0)
             {
 
-                return new ServiceResponse<List<DamageCard>>
+                return new ServiceResponse<List<DamageCardData>>
                 {
                     Data = result.ToList()
                 };
             }
             else
             {
-                return new ServiceResponse<List<DamageCard>>
+                return new ServiceResponse<List<DamageCardData>>
                 {
-                    Data = new List<DamageCard>(),
+                    Data = new List<DamageCardData>(),
                     Success = false,
                     Message = "No damage cards found"
                 };

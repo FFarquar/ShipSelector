@@ -26,7 +26,7 @@ namespace ShipSelector.Services.UnitsandListsServiceClient
         Task<ServiceResponse<int>> UpdateUnit(Unit unit);
         Task<ServiceResponse<bool>> DeleteUnit(int unitId);
         Task<ServiceResponse<List<OrderCard>>> GetBroadSideOrderCards();
-        Task<ServiceResponse<List<DamageCard>>> GetBroadSideDamageCards();
+        Task<ServiceResponse<List<DamageCardData>>> GetBroadSideDamageCards();
 
         //This isnt required in the static version of the ship selector
         //Task<ServiceResponse<int>> AddGameSystemUnitSpecificDetail(GameSystemUnitSpecificDetail gamespefic, List<FileUploadDTO> filesToUploadDTO, int countryId);

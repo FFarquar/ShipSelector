@@ -3,6 +3,7 @@
 @layout NoMenuLayout
 @inject IStorageService StorServ
 @using ShipSelector.Services.UnitsandListsServiceClient
+
 @inject IUnitsandListsServiceClient ULSC
 
 @* 
@@ -71,8 +72,7 @@
 
                         <div class="ship_order_card_container">
                             @* <img class ="ship_order_card" src="BroadsidesCards/Orders/more_speed.jpg"/> *@
-                            <img class="ship_order_card" src="@selectedShip.selectedOrderImagePath" />
-
+                            <img  class="ship_order_card" src="@selectedShip.selectedOrderImagePath" />
                         </div>
                         <div>
                             <label for="order_active">Order is active</label>
@@ -82,14 +82,19 @@
                 </div>
             </div>
             <div class="damage_cards">
-                <label>Damage Cards</label>
+                <h4>Damage Cards</h4>
 
                 <div>
-                    <button>Add damage card</button>
+                    <button @onclick="() => AddDamageCard()">Add damage card</button>
                 </div>
-                <div>
-                    <img class="damage_card" src="BroadsidesCards/Damage/damage_test.jpg" />
-                    <img class="damage_card" src="BroadsidesCards/Damage/damage_test.jpg" />
+                <div class="damage_cards_container">
+                    @foreach (var item in selectedShip.DamageCards)
+                    {
+                        <div class="damage_card_and_delete">
+                            <img id="@item.id" class="damage_card" src=@item.ImagePath />
+                            <PopContainer idOfelement="@item.id" ConfirmedChanged2="RemoveDamageCard" />
+                        </div>
+                    }
                 </div>
 
 
@@ -110,7 +115,9 @@
 
 
     private List<OrderCard> OrderCardList = new List<OrderCard>();  //a list of order cards
-    private List<DamageCard> DamageCardList = new List<DamageCard>();  //a list of all damage cards
+
+    private List<DamageCardData> DamageCardList = new List<DamageCardData>();  //a list of all damage cards. Used to create DamageCardDeck
+    private List<DamageCard> DamageCardDeck = new List<DamageCard>();   //the deck of damage cards to be drawn from
 
     private async Task OnBeforeInternalNavigation(LocationChangingContext locationChangingContext)
     {
@@ -124,25 +131,74 @@
     {
 
         await BuildListOfOrderCards();
-        await BuildListOfDamageCards();
+        await GetListOfDamageCards();
 
         base.OnInitialized();
+
+
         var SelectedUnitsResponse = await StorServ.RetrieveAllUnits();
 
         //convert the retrieved units into BroadsideSDS objects
         CreateSDSObjects(SelectedUnitsResponse.Data);
 
+        await CreateDamageDeck();
+
+    }
+    #region  Damage card stuff
+
+    private async Task RemoveDamageCard(int response)
+    {
+
+        if (response != 0)
+        {
+            Console.WriteLine("Remove card number = " + response);
+
+            DamageCard dcToDelete = new DamageCard();
+            foreach (var item in selectedShip.DamageCards)
+            {
+                if(item.id == response){
+                    dcToDelete = item;
+                }
+            }
+
+            selectedShip.DamageCards.Remove(dcToDelete);
+            ///have to delete the card from the collection. Get the id somehow
+        }
+    }
+    private async Task CreateDamageDeck()
+    {
+        // Function creates a full deck of damage cards
+
+        DamageCardDeck = new List<DamageCard>();
+        int dcCount = 0;
+        foreach (var item in DamageCardList)
+        {
+
+            for (int i = 0; i < item.number_cards; i++)
+            {
+                dcCount++;
+                DamageCard dc = new DamageCard();
+                dc.id = dcCount;
+                dc.ImagePath = item.ImagePath;
+                dc.Name = item.Name;
+                DamageCardDeck.Add(dc);
+            }
+        }
+
+        Console.WriteLine("Number of cards in DamageCardDeck = " + DamageCardDeck.Count);
     }
 
-    private async Task BuildListOfDamageCards()
+
+    private async Task GetListOfDamageCards()
     {
+        //gets a list of all the cards and their numbers
         var broadsideCards = await ULSC.GetBroadSideDamageCards();
 
         int totalNumberOfCardsInDeck = 0;
-        DamageCardList = new List<DamageCard>();
+        DamageCardList = new List<DamageCardData>();
         foreach (var item in broadsideCards.Data)
         {
-            DamageCard dc = new DamageCard();
+            DamageCardData dc = new DamageCardData();
 
             dc.Name = item.Name;
             dc.ImagePath = item.ImagePath;
@@ -152,8 +208,42 @@
             DamageCardList.Add(dc);
         }
 
-        Console.WriteLine("Total num damage cards = " + totalNumberOfCardsInDeck);
+        // Console.WriteLine("Total num damage cards = " + totalNumberOfCardsInDeck);
     }
+
+
+    private async void AddDamageCard()
+    {
+        //draws a damage card and adds it to the active ship
+
+        selectedShip.DamageCards.Add(DrawDamageCard());
+
+        Console.WriteLine("Card drawn = " + selectedShip.DamageCards[selectedShip.DamageCards.Count - 1].Name);
+    }
+
+    private  DamageCard DrawDamageCard() 
+    {
+        if (DamageCardDeck.Count ==0)
+        {
+            //create a new deck
+            CreateDamageDeck();
+            Console.WriteLine("Deck is being reshuffled");
+        }
+
+        Random r = new Random();
+        int rInt = r.Next(0, DamageCardDeck.Count);
+
+        //get the card
+        DamageCard dcr = new DamageCard();
+        dcr = DamageCardDeck[rInt];
+
+        //remove it from the collection
+        DamageCardDeck.Remove(dcr);
+
+        return dcr;
+    }
+
+    #endregion
 
     private async Task BuildListOfOrderCards()
     {

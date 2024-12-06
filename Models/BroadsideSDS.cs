@@ -16,14 +16,21 @@ namespace ShipSelector.Models
         public bool orderIsActive { get; set; } = false;
     }
 
-    public class DamageCard
+    public class DamageCardData
     {
-        //can have multiple cards
+        //This is the source card from the JSON. 
         public string Name { get; set; }
         public string ImagePath { get; set; }
         public int id { get; set; }
         public int number_cards { get; set; }
+    }
 
+    public class DamageCard
+    {
+        //This is the card object that goes into a deck
+        public string Name { get; set; }
+        public string ImagePath { get; set; }
+        public int id { get; set; }
     }
 
     public class OrderCard

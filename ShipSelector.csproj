@@ -34,6 +34,48 @@
     <Content Update="Pages\BroadsideSD_Mockup.razor">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
     </Content>
+    <Content Update="wwwroot\BroadsidesCards\Damage\bridge_hit.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\BroadsidesCards\Damage\clear_the_decks.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\BroadsidesCards\Damage\cordite_fire.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\BroadsidesCards\Damage\engine_damage.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\BroadsidesCards\Damage\fire_direction_centre_destroyed.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\BroadsidesCards\Damage\fire_direction_centre_hit.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\BroadsidesCards\Damage\gun_silenced.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\BroadsidesCards\Damage\holed_below_the_waterline.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\BroadsidesCards\Damage\main_turret_silenced.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\BroadsidesCards\Damage\order_telegraph_damaged.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\BroadsidesCards\Damage\propulsion_damage.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\BroadsidesCards\Damage\rudder_assembly_damaged.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\BroadsidesCards\Damage\shipboard_fire.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\BroadsidesCards\Damage\steering_damaged.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Update="wwwroot\BroadsidesCards\Orders\come_about.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
