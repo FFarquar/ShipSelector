@@ -1216,5 +1216,26 @@
     "Cost": 58,
     "ImagePath": "Canopus.jpg",
     "RulesetId": 3
+  },
+  {
+    "Id": 209,
+    "UnitId": 186,
+    "Cost": 68,
+    "ImagePath": "drake.jpg",
+    "RulesetId": 3
+  },
+  {
+    "Id": 210,
+    "UnitId": 187,
+    "Cost": 60,
+    "ImagePath": "devonshire.jpg",
+    "RulesetId": 3
+  },
+  {
+    "Id": 211,
+    "UnitId": 188,
+    "Cost": 32,
+    "ImagePath": "bristol.jpg",
+    "RulesetId": 3
   }
 ]
