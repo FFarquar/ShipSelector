@@ -22,7 +22,12 @@
 
 
 <main class="main">
-    <h3>Select a Ship</h3>
+    <div class="main_heading">
+        @* <h4>Select a Ship</h4> *@
+        <h2 class="ship_name_heading">@selectedShip.ShipName</h2>
+
+    </div>
+
     <div class="main_container">
         <div class="ship_list_nav_bar_left_container">
 
@@ -44,25 +49,49 @@
                 <div class="ship_current_stats_and_order">
                     @* Contains editiable fields for the ship *@
                     <div class="ship_stats">
-                        <div>
+                        <div class="rename_ship" hidden="@selectedShip.renameHidden">
+                            <label for="rename_ship_input">Ship Name</label>
+                            <input class="rename_ship_input_cl" id="rename_ship_input" type="text" @bind-value=@selectedShip.ShipName />
+                        </div>
+
+                        <div class="input_field">
                             <label for="current_speed">Current Speed</label>
                             <input class="stat_input" id="current_speed" type="number" @bind-value=@selectedShip.CurrentSpeed />
                         </div>
 
-                        <div>
+                        <div class="input_field">
                             <label for="hull_hits">Hull Hits</label>
                             <input class="stat_input" id="hull_hits" type="number" @bind-value=@selectedShip.HullHits />
                         </div>
-                        <div>
-                            <label for="hull_hits">Flooding hits</label>
-                            <input class="stat_input" id="hull_hits" type="number" @bind-value=@selectedShip.FloodingHits />
+                        <div class="input_field">
+                            <label title="Number of flooding hits" for="hull_hits">Flooding hits</label>
+                            <input class="stat_input" id="hull_hits" type="number" title="Number of flooding hits" @bind-value=@selectedShip.FloodingHits />
+                        </div>
+
+                    </div>
+                    <div class="torpedos">
+                        <h5>Torpedoes</h5>
+
+                        <div class="checkbox_option">
+                            <label for="torpedos_fired">Torps used</label>
+                            <input class="stat_input"  id="torpedos_fired" type="checkbox" @bind=@selectedShip.torpsFired />
+                        </div>
+
+                        <div class="checkbox_option">
+                            <label for="port_wing_torp_fired">Port torps used</label>
+                            <input class="stat_input" id="port_wing_torp_fired" type="checkbox" @bind=@selectedShip.portTorpsFired />
+                        </div>
+
+                        <div class="checkbox_option">
+                            <label for="starb_wing_torp_fired">Starboard torps used </label>
+                            <input class="stat_input" id="starb_wing_torp_fired" type="checkbox" @bind=@selectedShip.starTorpsFired />
                         </div>
 
                     </div>
                     <div class="ship_order">
-                        <label>Ship order</label>
+                        <h5>Ship order</h5>
                         @* <select @bind=selectedShip.selectedOrderCard  Name="Name_of_list_box" @onclick="() => ChangeOrderImage()"> *@
-                        <select @bind=selectedShip.selectedOrderCard Name="Name_of_list_box" @bind:after="() => ChangeOrderImage()">
+                        <select class="ship_order_select" @bind=selectedShip.selectedOrderCard Name="Name_of_list_box" @bind:after="() => ChangeOrderImage()">
 
                             @for (int i = 0; i < @OrderCardList.Count; i++)
                             {
@@ -74,18 +103,19 @@
                             @* <img class ="ship_order_card" src="BroadsidesCards/Orders/more_speed.jpg"/> *@
                             <img  class="ship_order_card" src="@selectedShip.selectedOrderImagePath" />
                         </div>
-                        <div>
+                        <div class="checkbox_option">
                             <label for="order_active">Order is active</label>
-                            <input id="order_active" type="checkbox" @bind =@selectedShip.orderIsActive/>
+                            <input class="stat_input"  id="order_active" type="checkbox" @bind=@selectedShip.orderIsActive />
                         </div>
                     </div>
+
                 </div>
             </div>
             <div class="damage_cards">
                 <h4>Damage Cards</h4>
 
                 <div>
-                    <button @onclick="() => AddDamageCard()">Add damage card</button>
+                    <button class="add_damage_card" @onclick="() => AddDamageCard()">Add damage card</button>
                 </div>
                 <div class="damage_cards_container">
                     @foreach (var item in selectedShip.DamageCards)
@@ -118,6 +148,7 @@
 
     private List<DamageCardData> DamageCardList = new List<DamageCardData>();  //a list of all damage cards. Used to create DamageCardDeck
     private List<DamageCard> DamageCardDeck = new List<DamageCard>();   //the deck of damage cards to be drawn from
+
 
     private async Task OnBeforeInternalNavigation(LocationChangingContext locationChangingContext)
     {
@@ -275,13 +306,29 @@
 
         foreach (var UnitForGameSystemDTO in data)
         {
-            BroadsideSDS newItem = new BroadsideSDS();
 
-            newItem.ShipName = UnitForGameSystemDTO.Name_ClassName;
-            newItem.ImagePath = "ShipImages/3/" + UnitForGameSystemDTO.Countryobj.Id + "/" +  UnitForGameSystemDTO.ImagePath;
+            for (int i = 0; i < UnitForGameSystemDTO.NumberSelected; i++)
+            {
+                BroadsideSDS newItem = new BroadsideSDS();
 
-            newItem.selectedOrderImagePath = OrderCardList[0].ImagePath;
-            BroadsideSDSList.Add(newItem);
+                Console.WriteLine("UnitForGameSystemDTO.ShipsSubsInClass = " + UnitForGameSystemDTO.ShipsSubsInClass);
+                if (UnitForGameSystemDTO.NumberSelected > 1)
+                {
+                    newItem.renameHidden = false;
+                    newItem.ShipName = UnitForGameSystemDTO.Name_ClassName;
+                }
+                else
+                {
+                    
+                    newItem.ShipName = UnitForGameSystemDTO.ShipsSubsInClass;
+                }
+
+                newItem.ImagePath = "ShipImages/3/" + UnitForGameSystemDTO.Countryobj.Id + "/" + UnitForGameSystemDTO.ImagePath;
+
+                newItem.selectedOrderImagePath = OrderCardList[0].ImagePath;
+                BroadsideSDSList.Add(newItem);
+
+            }
 
             // Console.WriteLine("Is order card acrive" + newItem.orderCard.CardIsActive);
         }

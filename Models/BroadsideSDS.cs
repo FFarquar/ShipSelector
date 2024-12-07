@@ -14,6 +14,10 @@ namespace ShipSelector.Models
         public int selectedOrderCard { get; set; } = 0;
         public string selectedOrderImagePath { get; set; } = string.Empty;
         public bool orderIsActive { get; set; } = false;
+        public bool torpsFired { get; set; } = false;
+        public bool starTorpsFired { get; set; } = false;
+        public bool portTorpsFired { get; set; } = false;
+        public bool renameHidden { get; set; } = true;
     }
 
     public class DamageCardData
