@@ -12,9 +12,26 @@
     /*    background-color:green;*/
 }
 
+.main_heading[b-pd0jsyqxkm]{
+    display:flex;
+    flex:100%;
+    width:800px;
+
+}
+/*.main_heading h4 {
+        display: inline;
+        width: 35%;
+}*/
+.ship_name_heading[b-pd0jsyqxkm] {
+    display: inline;
+    width: 65%;
+    font-size:xx-large;
+    justify-content:center;
+    margin-left:185px;
+}
 .ship_list_nav_bar_left_container[b-pd0jsyqxkm] {
     min-width: 150px;
-    background-color: purple;
+    background-color: darkslategrey;
     margin: 5px;
 }
 
@@ -23,6 +40,9 @@
     height: 100%;
     flex-direction: column;
     flex-wrap: wrap;
+
+
+    
 }
 
 /*.ship_container {
@@ -60,21 +80,37 @@
     flex-direction: column;
     min-width: 150px;
     max-width: 200px;
+    margin-left:10px;
     /*    background-color: black;*/
 }
 
+
 .ship_stats[b-pd0jsyqxkm] {
+    display:block;
+}
+.rename_ship[b-pd0jsyqxkm] {
+    display:flex;
+    flex-direction:column;
+}
+.input_field[b-pd0jsyqxkm] {
+    margin-top:2px;
+}
+.rename_ship_input_cl[b-pd0jsyqxkm] {
+    width: 100%;
 }
 
 .ship_order[b-pd0jsyqxkm] {
     margin-top: 5px;
     border-style: solid;
-    background-color: red;
+    /*    background-color: red;*/
     /*    max-width:200px;*/
     display: flex;
     flex-direction: column;
 }
 
+.ship_order h5[b-pd0jsyqxkm]{
+    margin-left:2px;
+}
 
 .ship_order_card_container[b-pd0jsyqxkm] {
 }
@@ -86,34 +122,58 @@
     display: block;*/
 }
 
+.checkbox_option[b-pd0jsyqxkm] {
+    background-color:lightgray;
+    margin-top:2px;
+}
+.torpedos[b-pd0jsyqxkm] {
+}
 
-.damage_cards[b-pd0jsyqxkm] {
-    margin-top: 5px;
-    border: solid;
-    max-width: 100%;
-    background-color: aqua;
+.ship_order .checkbox_option[b-pd0jsyqxkm]{
+    margin: 2px;
+}
+
+.ship_order_select[b-pd0jsyqxkm] {
+    margin: 2px;
 }
 
 .SDS_and_Stats[b-pd0jsyqxkm] {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: pink;
+    border: solid;
+    padding: 2px;
+    /*    background-color: pink;*/
 }
+
 
 .stat_input[b-pd0jsyqxkm] {
     max-width: 50px;
     float: right;
+    margin-right:5px;
     height: 20px;
+}
+
+.damage_cards[b-pd0jsyqxkm] {
+    margin-top: 5px;
+    border: solid;
+    max-width: 100%;
+    padding: 2px;
+    /*    background-color: aqua;*/
 }
 
 .damage_cards_container[b-pd0jsyqxkm] {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
 
 .damage_card_and_delete[b-pd0jsyqxkm] {
     flex-direction: column;
+}
+
+.add_damage_card[b-pd0jsyqxkm] {
+    padding:0px;
+    background-color:lightcoral;
 }
 
 .damage_card[b-pd0jsyqxkm] {
@@ -122,7 +182,7 @@
 
 @media only screen and (max-width: 1130px) {
     .main[b-pd0jsyqxkm] {
-        background-color: lightblue;
+/*        background-color: lightblue;*/
     }
 
     .ship_current_stats_and_order[b-pd0jsyqxkm] {
@@ -137,6 +197,9 @@
     .ship_stats[b-pd0jsyqxkm] {
         min-width: 180px;
         margin-right: 30px;
+    }
+    .torpedos[b-pd0jsyqxkm] {
+        min-width:200px;
     }
 }
 /* /Pages/BroadsideSD_Mockup.razor.rz.scp.css */
