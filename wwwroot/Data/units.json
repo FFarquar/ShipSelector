@@ -1269,7 +1269,7 @@
     "CountryId": 14,
     "NumberinClass_shipSub": 4,
     "Name_ClassName": "Monmouth",
-    "ShipsSubsInClass": "HMS Monmouth"
+    "ShipsSubsInClass": "HMS Monmouth, HMS Kent"
   },
   {
     "Id": 173,
@@ -1373,6 +1373,30 @@
     "CountryId": 14,
     "NumberinClass_shipSub": 6,
     "Name_ClassName": "Canopus",
-    "ShipsSubsInClass": "HMS Canopus"
+    "ShipsSubsInClass": "HMSCanopus"
+  },
+  {
+    "Id": 186,
+    "SubUnitTypeId": 19,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 4,
+    "Name_ClassName": "Drake",
+    "ShipsSubsInClass": "HMS Good Hope"
+  },
+  {
+    "Id": 187,
+    "SubUnitTypeId": 19,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 6,
+    "Name_ClassName": "Devonshire",
+    "ShipsSubsInClass": "HMS Carnarvon"
+  },
+  {
+    "Id": 188,
+    "SubUnitTypeId": 7,
+    "CountryId": 14,
+    "NumberinClass_shipSub": 5,
+    "Name_ClassName": "Bristol",
+    "ShipsSubsInClass": "HMS Glasgow"
   }
 ]
