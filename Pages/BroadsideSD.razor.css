@@ -1,4 +1,17 @@
-﻿.main_container {
+﻿.main {
+    width: 100%;
+    /*    background-color:blue;*/
+    margin: 0px;
+}
+
+.main_heading{
+    display:flex;
+    flex:100%;
+    width:800px;
+}
+
+
+.main_container {
     /*This is the main layout that has a column of buttons for each ship in the left column
     and the main layout on the right that has the ship image and holds
     current damage, current speed, current order, current damage cards
@@ -11,16 +24,6 @@
     /*    background-color:green;*/
 }
 
-.main_heading{
-    display:flex;
-    flex:100%;
-    width:800px;
-
-}
-/*.main_heading h4 {
-        display: inline;
-        width: 35%;
-}*/
 .ship_name_heading {
     display: inline;
     width: 65%;
@@ -39,25 +42,7 @@
     height: 100%;
     flex-direction: column;
     flex-wrap: wrap;
-
-
-    
 }
-
-/*.ship_container {
-    position: absolute;
-    display: grid;
-    grid-template-areas:
-        "SDS SDS curr_speed"
-        "SDS SDS curr_damage";
-}*/
-
-/*.main_container .ship_sds_status_right_container .SDS {
-    color: pink;
-    min-width:400px;
-    background-color: orange;
-}*/
-
 
 .ship_button {
     display: block;
@@ -65,12 +50,26 @@
     margin: 5px;
 }
 
-.main {
-    width: 100%;
-    /*    background-color:blue;*/
-    margin: 0px;
+.ship_button_advanced {
+    display: block;
+    min-width: 150px;
+    margin: 5px;
+    padding-top:5px;
 }
 
+.ship_label_adanced {
+    margin-left:4px;
+    font-size:14px;
+}
+.toggle_advanced_list {
+    margin-top: 50px;
+    height: 30px;
+    width: 150px;
+}
+
+.advanced_ship_view {
+    background-color: aqua;
+}
 .ship_image {
 }
 

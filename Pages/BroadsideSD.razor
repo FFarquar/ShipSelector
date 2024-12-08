@@ -30,12 +30,26 @@
 
     <div class="main_container">
         <div class="ship_list_nav_bar_left_container">
+            <div class="simple_ship_list" hidden="@(!ShowSimpleListOfShips)">
+                @for (int r = 0; r < @BroadsideSDSList.Count; r++)
+                {
+                    var temp = r;
+                    <button class="ship_button" @onclick="() => ChangeSelectedShip(BroadsideSDSList[temp])">@BroadsideSDSList[r].ShipName</button>
+                }
+            </div>
 
-            @for (int r = 0; r < @BroadsideSDSList.Count; r++)
-            {
-                var temp  = r;
-                <button class="ship_button" @onclick="() => ChangeSelectedShip(BroadsideSDSList[temp])">@BroadsideSDSList[r].ShipName</button>
-            }
+            <div class="expanded_ship_list" hidden ="@(ShowSimpleListOfShips)">
+                @for (int r = 0; r < @BroadsideSDSList.Count; r++)
+                {
+                    var temp = r;
+                    <div class="advanced_ship_view"> 
+                        <button class="ship_button_advanced" @onclick="() => ChangeSelectedShip(BroadsideSDSList[temp])">@BroadsideSDSList[r].ShipName</button>
+                        <label class="ship_label_adanced">@BroadsideSDSList[r].summaryText</label>
+                    </div>
+                }
+            </div>
+
+            <button class="toggle_advanced_list" @onclick="() => ToggleAdvancedShipView()">@toggleShipViewName</button>
         </div>
 
         <div class="ship_sds_status_right_container">
@@ -52,6 +66,11 @@
                         <div class="rename_ship" hidden="@selectedShip.renameHidden">
                             <label for="rename_ship_input">Ship Name</label>
                             <input class="rename_ship_input_cl" id="rename_ship_input" type="text" @bind-value=@selectedShip.ShipName />
+                        </div>
+
+                        <div class="input_field">
+                            <label title="The splash marker this ship is using" for="splash_label">Splash label</label>
+                            <input class="stat_input" id="splash_label" type="text" title="The splash marker this ship is using" @bind-value=@selectedShip.DirectedGunTag />
                         </div>
 
                         <div class="input_field">
@@ -149,6 +168,8 @@
     private List<DamageCardData> DamageCardList = new List<DamageCardData>();  //a list of all damage cards. Used to create DamageCardDeck
     private List<DamageCard> DamageCardDeck = new List<DamageCard>();   //the deck of damage cards to be drawn from
 
+    private bool ShowSimpleListOfShips { get; set; } = true;
+    private string toggleShipViewName { get; set; } = "Show Summary";
 
     private async Task OnBeforeInternalNavigation(LocationChangingContext locationChangingContext)
     {
@@ -248,8 +269,8 @@
         //draws a damage card and adds it to the active ship
 
         selectedShip.DamageCards.Add(DrawDamageCard());
-
-        Console.WriteLine("Card drawn = " + selectedShip.DamageCards[selectedShip.DamageCards.Count - 1].Name);
+        selectedShip.setSummaryText();
+        // Console.WriteLine("Card drawn = " + selectedShip.DamageCards[selectedShip.DamageCards.Count - 1].Name);
     }
 
     private  DamageCard DrawDamageCard() 
@@ -319,7 +340,7 @@
                 }
                 else
                 {
-                    
+
                     newItem.ShipName = UnitForGameSystemDTO.ShipsSubsInClass;
                 }
 
@@ -346,5 +367,19 @@
         StateHasChanged();
     }
 
+    private async void ToggleAdvancedShipView()
+    {
+        // Console.WriteLine("in toggleadvancedShipview");
+        ShowSimpleListOfShips = !ShowSimpleListOfShips;
+
+        if (ShowSimpleListOfShips)
+        {
+            toggleShipViewName = "Show summary";
+        }else{
+            toggleShipViewName = "Simple view";
+        }
+
+        StateHasChanged();
+    }
 }
  
