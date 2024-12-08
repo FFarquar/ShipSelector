@@ -30,12 +30,13 @@
     width: 65%;
     font-size:xx-large;
     justify-content:center;
-    margin-left:185px;
+    margin-left:210px;
 }
 .ship_list_nav_bar_left_container[b-pd0jsyqxkm] {
-    min-width: 150px;
+    min-width: 190px;
     background-color: darkslategrey;
     margin: 5px;
+    margin-top:-40px;
 }
 
 .ship_sds_status_right_container[b-pd0jsyqxkm] {
@@ -54,22 +55,32 @@
 .ship_button_advanced[b-pd0jsyqxkm] {
     display: block;
     min-width: 150px;
-    margin: 5px;
+    margin: 2px;
     padding-top:5px;
+    background-color:burlywood;
 }
 
 .ship_label_adanced[b-pd0jsyqxkm] {
     margin-left:4px;
     font-size:14px;
+    background-color:white;
+    margin-bottom:2px;
 }
+
+
 .toggle_advanced_list[b-pd0jsyqxkm] {
     margin-top: 50px;
+    margin-left:5px;
     height: 30px;
     width: 150px;
+    background-color:aquamarine;
 }
 
 .advanced_ship_view[b-pd0jsyqxkm] {
-    background-color: aqua;
+/*    background-color: aqua;*/
+margin:2px;
+border:ridge;
+
 }
 .ship_image[b-pd0jsyqxkm] {
 }
@@ -199,6 +210,9 @@
     }
     .torpedos[b-pd0jsyqxkm] {
         min-width:200px;
+    }
+    .ship_list_nav_bar_left_container[b-pd0jsyqxkm] {
+        min-width: 190px;
     }
 }
 /* /Pages/BroadsideSD_Mockup.razor.rz.scp.css */
@@ -743,7 +757,12 @@ main[b-2645jomg7u] {
     border-color: lightblue;
     width: 250px;
     position: absolute;
-    top: -50px;
+    top: -100px;
     padding: 10px;
     border-radius: 8px;
+}
+
+.deleteButtton[b-dden5bwmy0] {
+    margin-top:1px;
+    margin-left:2px;
 }
