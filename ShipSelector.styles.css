@@ -1,4 +1,17 @@
 /* /Pages/BroadsideSD.razor.rz.scp.css */
+.main[b-pd0jsyqxkm] {
+    width: 100%;
+    /*    background-color:blue;*/
+    margin: 0px;
+}
+
+.main_heading[b-pd0jsyqxkm]{
+    display:flex;
+    flex:100%;
+    width:800px;
+}
+
+
 .main_container[b-pd0jsyqxkm] {
     /*This is the main layout that has a column of buttons for each ship in the left column
     and the main layout on the right that has the ship image and holds
@@ -12,16 +25,6 @@
     /*    background-color:green;*/
 }
 
-.main_heading[b-pd0jsyqxkm]{
-    display:flex;
-    flex:100%;
-    width:800px;
-
-}
-/*.main_heading h4 {
-        display: inline;
-        width: 35%;
-}*/
 .ship_name_heading[b-pd0jsyqxkm] {
     display: inline;
     width: 65%;
@@ -40,25 +43,7 @@
     height: 100%;
     flex-direction: column;
     flex-wrap: wrap;
-
-
-    
 }
-
-/*.ship_container {
-    position: absolute;
-    display: grid;
-    grid-template-areas:
-        "SDS SDS curr_speed"
-        "SDS SDS curr_damage";
-}*/
-
-/*.main_container .ship_sds_status_right_container .SDS {
-    color: pink;
-    min-width:400px;
-    background-color: orange;
-}*/
-
 
 .ship_button[b-pd0jsyqxkm] {
     display: block;
@@ -66,12 +51,26 @@
     margin: 5px;
 }
 
-.main[b-pd0jsyqxkm] {
-    width: 100%;
-    /*    background-color:blue;*/
-    margin: 0px;
+.ship_button_advanced[b-pd0jsyqxkm] {
+    display: block;
+    min-width: 150px;
+    margin: 5px;
+    padding-top:5px;
 }
 
+.ship_label_adanced[b-pd0jsyqxkm] {
+    margin-left:4px;
+    font-size:14px;
+}
+.toggle_advanced_list[b-pd0jsyqxkm] {
+    margin-top: 50px;
+    height: 30px;
+    width: 150px;
+}
+
+.advanced_ship_view[b-pd0jsyqxkm] {
+    background-color: aqua;
+}
 .ship_image[b-pd0jsyqxkm] {
 }
 
