@@ -9,7 +9,12 @@
     border-color: lightblue;
     width: 250px;
     position: absolute;
-    top: -50px;
+    top: -100px;
     padding: 10px;
     border-radius: 8px;
+}
+
+.deleteButtton {
+    margin-top:1px;
+    margin-left:2px;
 }

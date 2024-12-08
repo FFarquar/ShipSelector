@@ -69,7 +69,7 @@
                         </div>
 
                         <div class="input_field">
-                            <label title="The splash marker this ship is using" for="splash_label">Splash label</label>
+                            <label title="The splash marker this ship is using" for="splash_label">Splash label Id</label>
                             <input class="stat_input" id="splash_label" type="text" title="The splash marker this ship is using" @bind-value=@selectedShip.DirectedGunTag />
                         </div>
 
@@ -117,14 +117,14 @@
                                 <option value=@OrderCardList[i].id>@OrderCardList[i].Name</option>
                             }
                         </select>
+                        <div class="checkbox_option">
+                            <label for="order_active">Order is active</label>
+                            <input class="stat_input" id="order_active" type="checkbox" @bind=@selectedShip.orderIsActive />
+                        </div>
 
                         <div class="ship_order_card_container">
                             @* <img class ="ship_order_card" src="BroadsidesCards/Orders/more_speed.jpg"/> *@
                             <img  class="ship_order_card" src="@selectedShip.selectedOrderImagePath" />
-                        </div>
-                        <div class="checkbox_option">
-                            <label for="order_active">Order is active</label>
-                            <input class="stat_input"  id="order_active" type="checkbox" @bind=@selectedShip.orderIsActive />
                         </div>
                     </div>
 
@@ -140,6 +140,7 @@
                     @foreach (var item in selectedShip.DamageCards)
                     {
                         <div class="damage_card_and_delete">
+
                             <img id="@item.id" class="damage_card" src=@item.ImagePath />
                             <PopContainer idOfelement="@item.id" ConfirmedChanged2="RemoveDamageCard" />
                         </div>
@@ -214,6 +215,8 @@
             }
 
             selectedShip.DamageCards.Remove(dcToDelete);
+
+            selectedShip.setSummaryText();
             ///have to delete the card from the collection. Get the id somehow
         }
     }
