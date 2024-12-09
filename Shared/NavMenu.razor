@@ -1,6 +1,8 @@
 ﻿@using ShipSelector.Services.UnitsandListsServiceClient
 @using ShipSelector.Models
 
+@using Microsoft.AspNetCore.Components.WebAssembly.Hosting
+@inject IWebAssemblyHostEnvironment Env
 
 @inject IUnitsandListsServiceClient ULSC 
 
@@ -33,26 +35,34 @@
                 </div>
             }
 
-             <div class="nav-item px-3">
+            <div class="nav-item px-3">
                 <NavLink href="broadsideSD_Mockup"> Broadside SD Mockup
-               
+
                 </NavLink>
             </div>
-@*            <div class="nav-item px-3">
-                <NavLink class="nav-link" href="unitsDB">
-                    <span class="oi oi-plus" aria-hidden="true"></span> Unit DB
-                </NavLink>
-            </div>
-*@
+
+
+            if(@Env.IsDevelopment()) {
+                <div class="nav-item px-3">
+                    @* //only want this visible in dev *@
+                    <NavLink class="nav-link" href="unitsDB">
+                        <span class="oi oi-plus" aria-hidden="true"></span> Unit DB
+                    </NavLink>
+                </div>
+
+            }
+
         </nav>
     </div>
 }
 
 @code {
     private bool collapseNavMenu = true;
+    private bool inDevelopmentMode = false;
 
     private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
     private static List<RuleSet> RuleSets = new List<RuleSet>();
+
 
     [CascadingParameter] 
     private RouteData routeData { get; set; } = default!;
@@ -60,6 +70,7 @@
     private void ToggleNavMenu()
     {
         collapseNavMenu = !collapseNavMenu;
+
     }
 
     protected override async Task OnInitializedAsync()
@@ -67,6 +78,7 @@
         var response = await ULSC.GetRuleSets();
         RuleSets = response.Data;
     }
+
 
     protected override void OnInitialized()
     {

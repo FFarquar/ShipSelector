@@ -20,4 +20,10 @@ builder.Services.AddScoped<IUnitsandListsServiceClient, UnitsandListsServiceClie
 builder.Services.AddScoped<IStorageService, StorageService>();
 builder.Services.AddScoped<IUploadDownloadServiceClient, UploadDownloadServiceClient>();
 
+if (builder.HostEnvironment.IsDevelopment())
+{
+    Console.WriteLine("In development");
+}
 await builder.Build().RunAsync();
+
+
