@@ -1,9 +1,15 @@
 ﻿@page "/unitsDB"
 
 @using ShipSelector.Services.UnitsandListsServiceClient
+@using Microsoft.AspNetCore.Components.WebAssembly.Hosting
+@inject IWebAssemblyHostEnvironment Env
+
 @inject IUnitsandListsServiceClient ULSC
 @inject NavigationManager NM
 @inject ILogger<Index> _logger;
+
+    @* This page shouldnt be visible in prod *@
+<div  hidden="@Env.IsProduction()">
 
 <h3>List of all units in the database</h3>
 <div class="btn-group" role="group" aria-label="Basic example">
@@ -54,6 +60,8 @@
 }
     </tbody>
    </table>
+
+</div>
 @code {
 
     public List<UnitWithGameSystemDetails> listOfUnitsWIthGSDetail { get; set; } = new List<UnitWithGameSystemDetails>();
