@@ -42,9 +42,9 @@
             </div>
 
 
-            if(@Env.IsDevelopment()) {
 
-            <div class="nav-item px-3">
+
+            <div class="nav-item px-3" hidden="@Env.IsProduction()">
                 @* //only want this visible in dev *@
                 <NavLink class="nav-link" href="unitsDB">
                     <span class="oi oi-plus" aria-hidden="true"></span> Unit DB
@@ -53,7 +53,7 @@
 
             </div>
             <labe style="color:white">Env name = @envName</labe>
-            }
+
 
         </nav>
     </div>
