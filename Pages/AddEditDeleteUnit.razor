@@ -1,0 +1,182 @@
+﻿@page "/addEditDeleteUnit/{unitId:int}/"
+@using ShipSelector.Services.UnitsandListsServiceClient
+@inject IUnitsandListsServiceClient ULSC
+@using Microsoft.AspNetCore.Components.WebAssembly.Hosting
+@inject IWebAssemblyHostEnvironment Env
+
+@inject NavigationManager NM
+
+    @* This page shouldnt be visible in prod *@
+<div  hidden="@Env.IsProduction()">
+@*If a unitId is passed in that doesnt exist, its a new request. -1 will be passed to indicate this*@
+
+@if(@unitId == -1)
+{
+    <h3>Add Unit</h3>    
+}
+else
+{
+    <h3>Edit/Delete Unit</h3>    
+}
+
+
+<EditForm Model="request" OnValidSubmit="AddUpdateUnit">
+    <DataAnnotationsValidator></DataAnnotationsValidator>
+
+    <label for="countryId">Country</label>
+    <InputSelect id="countryId" @bind-Value="request.CountryId" class="form-control">
+            <option value="">--Select Country--</option>
+
+            @foreach(var country in countryList)
+            {
+            <option value="@country.Id"> @country.CountryName</option>
+            }
+    </InputSelect> 
+
+
+    <label for="subunitId">Sub unit type</label>
+    <InputSelect id="subunitId" @bind-Value="request.SubUnitTypeId" class="form-control">
+            <option value="">--Select Unit type--</option>
+
+            @foreach(var subUnit in subUnitTypes)
+            {
+            <option value="@subUnit.Id"> @subUnit.SubUnitName</option>
+            }
+    </InputSelect> 
+
+    <div class="mb-3">
+        <label for="name">Number in class (The number produced. For aircraft, this is the number of models I have)</label>
+        <InputNumber id="name" @bind-Value="request.NumberinClass_shipSub" class="form-control"/>
+        <ValidationMessage For="@(() => request.NumberinClass_shipSub)" />
+    </div>
+
+    <div class="mb-3">
+        <label for="className">Class name or Aircraft Name</label>
+        <InputText id="className" @bind-Value="request.Name_ClassName" class="form-control"/>
+        <ValidationMessage For="@(() => request.Name_ClassName)" />
+    </div>
+
+    <div class="mb-3">
+        <label for="shipsInClass">Names of ships in in collection. Comma deliminated</label>
+        <InputText id="shipsInClass" @bind-Value="request.ShipsSubsInClass" class="form-control"/>
+        <ValidationMessage For="@(() => request.ShipsSubsInClass)" />
+    </div>
+
+    @if(unitId == -1)
+    {
+        @*adding a new unit*@
+        <button type="submit" class="btn btn-primary">Add New Unit</button>
+        <p>Remember, you have to add rule specific details for this new unit</p>
+    }
+    else
+    {
+        @*existing unit*@
+        <button type="submit" class="btn btn-primary">Update existing unit</button>
+         <PopContainer ConfirmedChanged="DeleteUnit" />
+        <button type="button" @onclick="() => ViewRuleSpecData()" class="btn btn-secondary fa fa-sticky-note-o"> View rule specific info</button>
+    }
+
+
+        @message
+</EditForm>
+</div>
+@code {
+    [Parameter]
+    public int unitId { get; set; } = -1;   //-1 is equiv of no unit, or adding a new unit
+
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public string returnUrl { get; set; } = string.Empty;
+
+    private List<SubUnitTypeDTO> subUnitTypes = new List<SubUnitTypeDTO>();
+    private List<Country> countryList = new List<Country>();
+
+    string message = string.Empty;
+    Unit request = new Unit();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        base.OnInitialized();
+
+        var result = await ULSC.GetListOfSubUnits();
+        subUnitTypes = result.Data;
+
+        var countryResult = await ULSC.GetListOfCountries();
+        countryList = countryResult.Data;
+
+    }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (unitId > -1)
+        {
+            var res = await ULSC.GetUnitWithoutChildObjects(unitId);
+
+            if (res != null)
+            {
+                request = res.Data;
+            }
+            else
+            {
+                request = new Unit();
+            }
+        }
+        else
+        {
+            request = new Unit();
+        }
+    }
+
+    private async Task AddUpdateUnit()
+    {
+        if(unitId== -1)
+        {
+            //adding a new unit
+            var result = await ULSC.AddUnit(request);
+            message = result.Message;
+
+            if (result.Success)
+            {
+                var urlToGoTo = "addRuleSetSpecifc/" + result.Data;
+                NM.NavigateTo(urlToGoTo);
+            }
+
+        }
+        else
+        {
+            //updating an existing unit
+            var result = await ULSC.UpdateUnit(request);
+            message = result.Message;
+            if (result.Success)
+            {
+                NM.NavigateTo(returnUrl);
+            }
+        }
+
+    }
+
+        protected  async Task ViewRuleSpecData()
+    {
+
+            var urlToGoTo = "addRuleSetSpecifc/" + request.Id;
+            NM.NavigateTo(urlToGoTo);
+    }
+
+    
+    private async Task DeleteUnit(bool deleteConfirmed)
+    {
+
+        if(deleteConfirmed == true)
+        {
+            var result = await ULSC.DeleteUnit(request.Id);
+            message = result.Message;
+
+            if (result.Success)
+            {
+
+                NM.NavigateTo(returnUrl);
+            }            
+        }
+    }
+}

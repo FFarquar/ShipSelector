@@ -1,5 +1,5 @@
 ﻿using ShipSelector.Models;
-//using ShipSelector.Shared;
+using ShipSelector.Shared;
 
 namespace ShipSelector.Services.UnitsandListsServiceClient
 {
@@ -28,7 +28,7 @@ namespace ShipSelector.Services.UnitsandListsServiceClient
         Task<ServiceResponse<List<OrderCard>>> GetBroadSideOrderCards();
         Task<ServiceResponse<List<DamageCardData>>> GetBroadSideDamageCards();
 
-        //This isnt required in the static version of the ship selector
-        //Task<ServiceResponse<int>> AddGameSystemUnitSpecificDetail(GameSystemUnitSpecificDetail gamespefic, List<FileUploadDTO> filesToUploadDTO, int countryId);
+
+        Task<ServiceResponse<int>> AddGameSystemUnitSpecificDetail(GameSystemUnitSpecificDetail gamespefic, List<FileUploadDTO> filesToUploadDTO, int countryId);
     }
 }

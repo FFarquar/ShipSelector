@@ -1,0 +1,106 @@
+﻿@page "/addUnit"
+@using ShipSelector.Services.UnitsandListsServiceClient
+@inject IUnitsandListsServiceClient ULSC
+@inject NavigationManager NM
+@inject ILogger<Index> _logger;
+@using Microsoft.AspNetCore.Components.WebAssembly.Hosting
+@inject IWebAssemblyHostEnvironment Env
+
+
+    @* This page shouldnt be visible in prod *@
+<div  hidden="@Env.IsProduction()">
+<h3>Add Unit to the database</h3>
+
+<EditForm Model="request" OnValidSubmit="AddNewUnit">
+    <DataAnnotationsValidator></DataAnnotationsValidator>
+
+    <label for="countryId">Country</label>
+    <InputSelect id="countryId" @bind-Value="request.CountryId" class="form-control">
+            <option value="">--Select Country--</option>
+
+            @foreach(var country in countryList)
+            {
+            <option value="@country.Id"> @country.CountryName</option>
+            }
+    </InputSelect> 
+
+
+    <label for="subunitId">Sub unit type</label>
+    <InputSelect id="subunitId" @bind-Value="request.SubUnitTypeId" class="form-control">
+            <option value="">--Select Unit type--</option>
+
+            @foreach(var subUnit in subUnitTypes)
+            {
+            <option value="@subUnit.Id"> @subUnit.SubUnitName</option>
+            }
+    </InputSelect> 
+
+    <div class="mb-3">
+        <label for="name">Number in class (The number produced. For aircraft, this is the number of models I have)</label>
+        <InputNumber id="name" @bind-Value="request.NumberinClass_shipSub" class="form-control"/>
+        <ValidationMessage For="@(() => request.NumberinClass_shipSub)" />
+    </div>
+
+    <div class="mb-3">
+        <label for="className">Class name or Aircraft Name</label>
+        <InputText id="className" @bind-Value="request.Name_ClassName" class="form-control"/>
+        <ValidationMessage For="@(() => request.Name_ClassName)" />
+    </div>
+
+    <div class="mb-3">
+        <label for="shipsInClass">Names of ships in in collection. Comma deliminated</label>
+        <InputText id="shipsInClass" @bind-Value="request.ShipsSubsInClass" class="form-control"/>
+        <ValidationMessage For="@(() => request.ShipsSubsInClass)" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add New Unit</button>
+
+    <p>Remember, you have to add rule specific details for this new unit</p>
+        @message
+</EditForm>
+</div>
+
+
+
+@code {
+
+    private List<SubUnitTypeDTO> subUnitTypes = new List<SubUnitTypeDTO>();
+    private List<Country> countryList = new List<Country>();
+    //private List<RuleSet> rulesetList = new List<RuleSet>();
+
+    Unit request = new Unit();
+    GameSystemUnitSpecificDetail gameSpecificRequest = new GameSystemUnitSpecificDetail();
+
+    string message = string.Empty;
+    
+
+    private async Task AddNewUnit()
+    {
+        //This is for testing
+        _logger.LogInformation("In AddNewUnit");
+
+        var result = await ULSC.AddUnit(request);
+        message = result.Message;
+
+        if (result.Success)
+        {
+            var urlToGoTo = "addRuleSetSpecifc/" + result.Data;
+            NM.NavigateTo(urlToGoTo);
+        }
+
+    }
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        base.OnInitialized();
+
+        var result = await ULSC.GetListOfSubUnits();
+        subUnitTypes = result.Data;
+
+        var countryResult = await ULSC.GetListOfCountries();
+        countryList = countryResult.Data;
+
+    }
+
+}

@@ -47,5 +47,7 @@ namespace ShipSelector.Models
         public Unit Unit { get; set; }
         public List<GameSystemUnitSpecificDetail> GameSpecificDetailList { get; set; }
         public List<String> RuleSetName{ get; set; }
+
+
     }
 }
