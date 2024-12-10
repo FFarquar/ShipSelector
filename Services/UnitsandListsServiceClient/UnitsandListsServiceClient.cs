@@ -124,8 +124,6 @@ namespace ShipSelector.Services.UnitsandListsServiceClient
             //            return result;
         }
 
-
-
         public async Task<ServiceResponse<List<SubUnitTypeDTO>>> GetListOfSubUnits()
         {
 
@@ -269,8 +267,9 @@ namespace ShipSelector.Services.UnitsandListsServiceClient
         public async Task<ServiceResponse<List<GameSystemUnitSpecificDetail>>> GetGameSystemUnitSpecificDetails(int unitId)
         {
             //Cant call the function to get a list of rule sets
+            List<RuleSet> rs = new List<RuleSet>();
             var response = await GetRuleSets();
-            List<RuleSet> rs = response.Data.ToList();
+             rs = response.Data;
 
             //var response = await _http.GetAsync(($"Data/ruleSets.json"));
             //var jsonResult = await response.Content.ReadFromJsonAsync<List<RuleSet>>();
@@ -712,6 +711,9 @@ namespace ShipSelector.Services.UnitsandListsServiceClient
                 var responseGS = await GetGameSystemUnitSpecificDetails(unit.Id);
                 gsusd = responseGS.Data;
                 gssd.GameSpecificDetailList = gsusd;
+                Console.WriteLine("Count of gsusd = " + gsusd.Count().ToString());
+                Console.WriteLine("Count of gssd.GameSpecificDetailList = " + gssd.GameSpecificDetailList.Count().ToString());
+                Console.WriteLine("gssd.GameSpecificDetailList[0].Ruleset.RulesetName = " + gssd.GameSpecificDetailList[0].Ruleset.RulesetName);
 
                 if (gsusd.Count() == 0)
                 {
@@ -720,13 +722,10 @@ namespace ShipSelector.Services.UnitsandListsServiceClient
                 }
                 else
                 {
-                    this should be returning a value
-                    Console.WriteLine("gsusd[0].Ruleset.RulesetName = " + gsusd[0].Ruleset.RulesetName);
+                    Console.WriteLine("gssd.GameSpecificDetailList[0].Ruleset.RulesetName = " + gssd.GameSpecificDetailList[0].Ruleset.RulesetName);
                 }
-            
 
-                
-                    
+
                 Console.WriteLine("GetGameSystemUnitSpecificDetails count = " + gsusd.Count().ToString());
                 
 
